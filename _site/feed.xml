@@ -1,4 +1,190 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-02-07T20:27:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>실무에 도움되는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(3)</title><link href="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(3)" /><published>2021-02-07T00:00:00+09:00</published><updated>2021-02-07T20:27:03+09:00</updated><id>http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html">&lt;!--more--&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-14T22:17:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">자바스크립트 라이브러리 현황 및 발전 방향</title><link href="http://localhost:4000/blog/2021/07/14/javascript-framework.html" rel="alternate" type="text/html" title="자바스크립트 라이브러리 현황 및 발전 방향" /><published>2021-07-14T00:00:00+09:00</published><updated>2021-07-14T17:39:47+09:00</updated><id>http://localhost:4000/blog/2021/07/14/javascript-framework</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/14/javascript-framework.html">&lt;!--more--&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#서론&quot; id=&quot;markdown-toc-서론&quot;&gt;서론&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-2장-자바스크립트-라이브러리의-개념-및-현황&quot; id=&quot;markdown-toc-제-2장-자바스크립트-라이브러리의-개념-및-현황&quot;&gt;제 2장. 자바스크립트 라이브러리의 개념 및 현황&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-개념&quot; id=&quot;markdown-toc-1-개념&quot;&gt;1. 개념&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-현황&quot; id=&quot;markdown-toc-2-현황&quot;&gt;2. 현황&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-2장-juqery&quot; id=&quot;markdown-toc-제-2장-juqery&quot;&gt;제 2장. Juqery&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-연혁&quot; id=&quot;markdown-toc-1-연혁&quot;&gt;1. 연혁&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-기술적-특징&quot; id=&quot;markdown-toc-2-기술적-특징&quot;&gt;2. 기술적 특징&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-3장-react&quot; id=&quot;markdown-toc-제-3장-react&quot;&gt;제 3장. React&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-연혁-1&quot; id=&quot;markdown-toc-1-연혁-1&quot;&gt;1. 연혁&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-기술적-특징-1&quot; id=&quot;markdown-toc-2-기술적-특징-1&quot;&gt;2. 기술적 특징&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-3장-차이점-및-발전-방향&quot; id=&quot;markdown-toc-제-3장-차이점-및-발전-방향&quot;&gt;제 3장. 차이점 및 발전 방향&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-차이점&quot; id=&quot;markdown-toc-1-차이점&quot;&gt;1. 차이점&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-발전-방향&quot; id=&quot;markdown-toc-2-발전-방향&quot;&gt;2. 발전 방향&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-5장-결론&quot; id=&quot;markdown-toc-제-5장-결론&quot;&gt;제 5장. 결론&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#참고문헌&quot; id=&quot;markdown-toc-참고문헌&quot;&gt;참고문헌&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;서론&quot;&gt;서론&lt;/h2&gt;
+
+&lt;p&gt;1,연구의 주제를 언급하되, 관심을 가지게 된 동기와 현재 연구의 주제가 가지는 의미를 기술한다&lt;br /&gt;
+2.연구자의 관심사는 무엇이며 현재 언론이나 대중매체에서의 연구분야에 대한 관점을 언급&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;연구 분야의 발전 이력이나 발전 방향에 대해서 기술&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;2009년 발표된 Node.js가 시장에 도입된 직후 자바스크립트 생태계는 큰 변화를 맞이하였다&lt;br /&gt;
+브라우저 런타임으로만 동작하던 자바스크립트를 새로운 환경의 런타임을 통해 실행할 수 있었고&lt;br /&gt;
+웹사이트 뿐만 아니라 서버까지 자바스크립트를 기반으로 구현할 수 있게 되었다&lt;/p&gt;
+
+&lt;p&gt;이후 노드 환경에서의 모듈 및 라이브러리 도구들을 관리하고 공유할 수 있는 &lt;br /&gt;
+노드 패키지 매니저(Node Package Manager)가 출시되었고&lt;br /&gt;
+전세계의 수 많은 엔지니어와 기업들은 쏟아내듯 공개하였다&lt;/p&gt;
+
+&lt;p&gt;기존 라이브러리만으로는 고도화된 웹개발에 있어서 &lt;br /&gt;
+한계가 있음을 깨달은 업계에서는 페이스북을 선두로 라이브러리와 프레임워크들이 생겨났다&lt;/p&gt;
+
+&lt;p&gt;하지만 우후죽순으로 개발된 라이브러리와 프레임워크로 인하여 현재 프론트엔드 시장은 혼란을 가져 올 수 있기에&lt;br /&gt;
+프로젝트 방향과 환경에 맞는 라이브러리 선택을 위해 구체적인 분석이 필요하다&lt;/p&gt;
+
+&lt;p&gt;자바스크립트 라이브러리의 현황 및 여러 종류의 라이브러리 유형을 분석하고 
+발전 방향에 대한 연구목적이 있다&lt;/p&gt;
+
+&lt;h2 id=&quot;제-2장-자바스크립트-라이브러리의-개념-및-현황&quot;&gt;제 2장. 자바스크립트 라이브러리의 개념 및 현황&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-개념&quot;&gt;1. 개념&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-현황&quot;&gt;2. 현황&lt;/h3&gt;
+
+&lt;h2 id=&quot;제-2장-juqery&quot;&gt;제 2장. Juqery&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-연혁&quot;&gt;1. 연혁&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-기술적-특징&quot;&gt;2. 기술적 특징&lt;/h3&gt;
+
+&lt;h2 id=&quot;제-3장-react&quot;&gt;제 3장. React&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-연혁-1&quot;&gt;1. 연혁&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-기술적-특징-1&quot;&gt;2. 기술적 특징&lt;/h3&gt;
+
+&lt;h2 id=&quot;제-3장-차이점-및-발전-방향&quot;&gt;제 3장. 차이점 및 발전 방향&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-차이점&quot;&gt;1. 차이점&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-발전-방향&quot;&gt;2. 발전 방향&lt;/h3&gt;
+
+&lt;h2 id=&quot;제-5장-결론&quot;&gt;제 5장. 결론&lt;/h2&gt;
+
+&lt;h4 id=&quot;참고문헌&quot;&gt;참고문헌&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.npmjs.com/&quot;&gt;npm 공식사이트&lt;/a&gt;
+&lt;a href=&quot;https://classic.yarnpkg.com/en/docs&quot;&gt;yarn 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">자바스크립트 패키지 매니저의 현황과 발전 방향</title><link href="http://localhost:4000/blog/2021/07/12/javascript-packager.html" rel="alternate" type="text/html" title="자바스크립트 패키지 매니저의 현황과 발전 방향" /><published>2021-07-12T00:00:00+09:00</published><updated>2021-07-14T15:06:42+09:00</updated><id>http://localhost:4000/blog/2021/07/12/javascript-packager</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/12/javascript-packager.html">&lt;!--more--&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-1장-서론&quot; id=&quot;markdown-toc-제-1장-서론&quot;&gt;제 1장. 서론&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-1장-자바스크립트-패키지-매니저&quot; id=&quot;markdown-toc-제-1장-자바스크립트-패키지-매니저&quot;&gt;제 1장. 자바스크립트 패키지 매니저&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-개념&quot; id=&quot;markdown-toc-1-개념&quot;&gt;1. 개념&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-효과&quot; id=&quot;markdown-toc-2-효과&quot;&gt;2. 효과&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-2장-클라이언트&quot; id=&quot;markdown-toc-제-2장-클라이언트&quot;&gt;제 2장. 클라이언트&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-npm&quot; id=&quot;markdown-toc-1-npm&quot;&gt;1. npm&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#1-연혁&quot; id=&quot;markdown-toc-1-연혁&quot;&gt;(1) 연혁&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#2-기술적-특징&quot; id=&quot;markdown-toc-2-기술적-특징&quot;&gt;(2) 기술적 특징&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-yarn&quot; id=&quot;markdown-toc-2-yarn&quot;&gt;2. yarn&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#1-연혁-1&quot; id=&quot;markdown-toc-1-연혁-1&quot;&gt;(1) 연혁&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#2-기술적-특징-1&quot; id=&quot;markdown-toc-2-기술적-특징-1&quot;&gt;(2) 기술적 특징&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-3장-문제점과-방안&quot; id=&quot;markdown-toc-제-3장-문제점과-방안&quot;&gt;제 3장. 문제점과 방안&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-문제점&quot; id=&quot;markdown-toc-1-문제점&quot;&gt;1. 문제점&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-방안&quot; id=&quot;markdown-toc-1-방안&quot;&gt;1. 방안&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-4장-시장-현황과-발전-방향&quot; id=&quot;markdown-toc-제-4장-시장-현황과-발전-방향&quot;&gt;제 4장. 시장 현황과 발전 방향&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-시장-현황&quot; id=&quot;markdown-toc-1-시장-현황&quot;&gt;1. 시장 현황&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-발전-방향&quot; id=&quot;markdown-toc-2-발전-방향&quot;&gt;2. 발전 방향&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#제-5장-결론&quot; id=&quot;markdown-toc-제-5장-결론&quot;&gt;제 5장. 결론&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#참고문헌&quot; id=&quot;markdown-toc-참고문헌&quot;&gt;참고문헌&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;제-1장-서론&quot;&gt;제 1장. 서론&lt;/h2&gt;
+
+&lt;p&gt;1,연구의 주제를 언급하되, 관심을 가지게 된 동기와 현재 연구의 주제가 가지는 의미를 기술한다
+2.연구자의 관심사는 무엇이며 현재 언론이나 대중매체에서의 연구분야에 대한 관점을 언급&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;연구 분야의 발전 이력이나 발전 방향에 대해서 기술&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;프로그래머
+2009년 발표된 Node.js가 도입된 직후  자바스크립트 패키지 매니저는&lt;/p&gt;
+
+&lt;p&gt;Node.js가 도입된 직후 프론트엔드 영역에서의 큰 변화를 불러온 패키지매니저에 대하여 다루고 싶다
+그러하여 산업 전반에서 이러한 패키저의 역할이 점 차 대두되었는데
+프론트엔드 개발자로&lt;/p&gt;
+
+&lt;p&gt;자바스크립트 패키저의 탄생비화와  자바스크립트 패키지 매니저의
+발전 방향에 대해서  연구목적이 있다&lt;/p&gt;
+
+&lt;h2 id=&quot;제-1장-자바스크립트-패키지-매니저&quot;&gt;제 1장. 자바스크립트 패키지 매니저&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-개념&quot;&gt;1. 개념&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-효과&quot;&gt;2. 효과&lt;/h3&gt;
+
+&lt;h2 id=&quot;제-2장-클라이언트&quot;&gt;제 2장. 클라이언트&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-npm&quot;&gt;1. npm&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;앱에 맞게 코드 패키지를 조정하거나 패키지를 그대로 통합할 수 있다.&lt;/li&gt;
+  &lt;li&gt;코드 및 코드 종속성의 여러 버전을 관리합니다.&lt;/li&gt;
+  &lt;li&gt;기본 코드가 업데이트되면 애플리케이션을 쉽게 업데이트할 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;바로 사용할 수 있는 독립 실행형 도구를 다운로드할 수 있다&lt;/li&gt;
+  &lt;li&gt;npx를 사용하여 다운로드하지 않고 패키지를 실행가능하다&lt;/li&gt;
+  &lt;li&gt;어디서든 모든 npm 사용자와 코드를 공유할 수 있다&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;1-연혁&quot;&gt;(1) 연혁&lt;/h4&gt;
+
+&lt;h4 id=&quot;2-기술적-특징&quot;&gt;(2) 기술적 특징&lt;/h4&gt;
+
+&lt;h3 id=&quot;2-yarn&quot;&gt;2. yarn&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-연혁-1&quot;&gt;(1) 연혁&lt;/h4&gt;
+
+&lt;h4 id=&quot;2-기술적-특징-1&quot;&gt;(2) 기술적 특징&lt;/h4&gt;
+
+&lt;h2 id=&quot;제-3장-문제점과-방안&quot;&gt;제 3장. 문제점과 방안&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-문제점&quot;&gt;1. 문제점&lt;/h3&gt;
+
+&lt;h3 id=&quot;1-방안&quot;&gt;1. 방안&lt;/h3&gt;
+
+&lt;h2 id=&quot;제-4장-시장-현황과-발전-방향&quot;&gt;제 4장. 시장 현황과 발전 방향&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-시장-현황&quot;&gt;1. 시장 현황&lt;/h3&gt;
+
+&lt;h3 id=&quot;2-발전-방향&quot;&gt;2. 발전 방향&lt;/h3&gt;
+
+&lt;h2 id=&quot;제-5장-결론&quot;&gt;제 5장. 결론&lt;/h2&gt;
+
+&lt;h4 id=&quot;참고문헌&quot;&gt;참고문헌&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.npmjs.com/&quot;&gt;npm 공식사이트&lt;/a&gt;
+&lt;a href=&quot;https://classic.yarnpkg.com/en/docs&quot;&gt;yarn 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(3)</title><link href="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(3)" /><published>2021-02-07T00:00:00+09:00</published><updated>2021-06-16T17:46:33+09:00</updated><id>http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#server&quot; id=&quot;markdown-toc-server&quot;&gt;Server&lt;/a&gt;    &lt;ul&gt;
@@ -14,7 +200,7 @@
 
 &lt;h2 id=&quot;server&quot;&gt;Server&lt;/h2&gt;
 
-&lt;p&gt;이번 포스팅에서는 Socket.io를 서버에 적용해서 데이터를 주고받는 방법을 알아볼 겁니다    &lt;br /&gt;
+&lt;p&gt;이번 포스팅에서는 Socket.io를 적용해서 채팅을 주고받는 방법을 알아볼 겁니다    &lt;br /&gt;
 Express 서버를 생성하기 위한 프로젝트 폴더를 하나 만들고 터미널을 열어 아래의 명령어를 입력해 줍니다.&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm init &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;
@@ -112,7 +298,7 @@ npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;nodemon &lt;span class
 
 &lt;blockquote&gt;
   &lt;p&gt;자세한 내용은 &lt;a href=&quot;https://socket.io/docs/v3/emitting-events/&quot; target=&quot;_blank&quot;&gt;공식문서&lt;/a&gt;를 참고해 주세요&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(2)</title><link href="http://localhost:4000/blog/2021/02/04/react-with-prettier.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(2)" /><published>2021-02-04T00:00:00+09:00</published><updated>2021-02-07T17:49:11+09:00</updated><id>http://localhost:4000/blog/2021/02/04/react-with-prettier</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/04/react-with-prettier.html">&lt;!--more--&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(2)</title><link href="http://localhost:4000/blog/2021/02/04/react-with-prettier.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(2)" /><published>2021-02-04T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/02/04/react-with-prettier</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/04/react-with-prettier.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#prettier&quot; id=&quot;markdown-toc-prettier&quot;&gt;Prettier&lt;/a&gt;    &lt;ul&gt;
@@ -212,7 +398,7 @@ coverage
 
 &lt;blockquote&gt;
   &lt;p&gt;이외에 추가 옵션 사항은 &lt;a href=&quot;https://prettier.io/docs/en/options.html&quot; target=&quot;_blank&quot;&gt;Prettier 공식문서&lt;/a&gt;를 참고해 주세요!&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(1)</title><link href="http://localhost:4000/blog/2021/02/01/react-without-create-react-app.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(1)" /><published>2021-02-01T00:00:00+09:00</published><updated>2021-02-07T19:42:09+09:00</updated><id>http://localhost:4000/blog/2021/02/01/react-without-create-react-app</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/01/react-without-create-react-app.html">&lt;!--more--&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(1)</title><link href="http://localhost:4000/blog/2021/02/01/react-without-create-react-app.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(1)" /><published>2021-02-01T00:00:00+09:00</published><updated>2021-06-16T17:45:49+09:00</updated><id>http://localhost:4000/blog/2021/02/01/react-without-create-react-app</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/01/react-without-create-react-app.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#process&quot; id=&quot;markdown-toc-process&quot;&gt;Process&lt;/a&gt;&lt;/li&gt;
@@ -234,8 +420,7 @@ coverage
 &lt;ul&gt;
   &lt;li&gt;이번 포스팅에서 진행할 예제는 1:1 채팅이 아닌 1:N 채팅입니다&lt;/li&gt;
   &lt;li&gt;2개의 서버를 띄우고 Socket.io와 Socket.io-client로 양방향 통신을 할겁니다&lt;/li&gt;
-  &lt;li&gt;Socket.io를 사용하는 Node.js(Express)와 MongoDB(Mongoose)로 서버를 구성합니다&lt;/li&gt;
-  &lt;li&gt;React와 Socket.io-client를 사용하여 서버와 데이터를 주고 받을 겁니다&lt;/li&gt;
+  &lt;li&gt;Socket.io를 사용하는 Node.js(Express)로 서버를 구성합니다&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;packagejson&quot;&gt;Package.json&lt;/h2&gt;
@@ -363,7 +548,7 @@ State Hook을 사용해서 간단하게 메시지의 상태를 바꾸는 버튼�
 
 &lt;p&gt;브라우저를 열고 주소창에 http://localhost:1234를 입력하여 정상적으로 페이지가 나온다면 성공입니다&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2020-04-26/page.png&quot; alt=&quot;Local Page&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">Load Balancer로 SSL 보안 인증서(Https) 추가하기(2)</title><link href="http://localhost:4000/blog/2021/01/23/aws-secure-socket-layer.html" rel="alternate" type="text/html" title="Load Balancer로 SSL 보안 인증서(Https) 추가하기(2)" /><published>2021-01-23T00:00:00+09:00</published><updated>2021-01-25T21:45:46+09:00</updated><id>http://localhost:4000/blog/2021/01/23/aws-secure-socket-layer</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/23/aws-secure-socket-layer.html">&lt;!--more--&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/2020-04-26/page.png&quot; alt=&quot;Local Page&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">Load Balancer로 SSL 보안 인증서(Https) 추가하기(2)</title><link href="http://localhost:4000/blog/2021/01/23/aws-secure-socket-layer.html" rel="alternate" type="text/html" title="Load Balancer로 SSL 보안 인증서(Https) 추가하기(2)" /><published>2021-01-23T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/23/aws-secure-socket-layer</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/23/aws-secure-socket-layer.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#load-balancer&quot; id=&quot;markdown-toc-load-balancer&quot;&gt;Load Balancer&lt;/a&gt;    &lt;ul&gt;
@@ -460,7 +645,7 @@ Application Load Balancer는 HTTP 및 HTTPS 트래픽을 사용하는 웹 애플
 &lt;p&gt;이제 사이트에 제대로 적용이 되었는지 확인해 봐야겠죠?&lt;br /&gt;
 브라우저를 열어 주소를 입력한 뒤 좌측의 자물쇠 아이콘을 누르면 정상적으로 보안 연결이 되어 있는 것을 확인할 수 있습니다!&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-23/site.png&quot; alt=&quot;Site&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Load Balancer로 SSL 보안 인증서(Https) 추가하기(1)</title><link href="http://localhost:4000/blog/2021/01/22/aws-certificate-manager.html" rel="alternate" type="text/html" title="Load Balancer로 SSL 보안 인증서(Https) 추가하기(1)" /><published>2021-01-22T00:00:00+09:00</published><updated>2021-01-23T19:45:19+09:00</updated><id>http://localhost:4000/blog/2021/01/22/aws-certificate-manager</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/22/aws-certificate-manager.html">&lt;!--more--&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-23/site.png&quot; alt=&quot;Site&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Load Balancer로 SSL 보안 인증서(Https) 추가하기(1)</title><link href="http://localhost:4000/blog/2021/01/22/aws-certificate-manager.html" rel="alternate" type="text/html" title="Load Balancer로 SSL 보안 인증서(Https) 추가하기(1)" /><published>2021-01-22T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/22/aws-certificate-manager</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/22/aws-certificate-manager.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#certificate-manager&quot; id=&quot;markdown-toc-certificate-manager&quot;&gt;Certificate Manager&lt;/a&gt;    &lt;ul&gt;
@@ -513,7 +698,7 @@ Certificate Manager 설정 페이지에서 좌측 상단 ‘인증서 요청’ 
 검토를 진행하게 됩니다 &lt;a href=&quot;https://mujaen.github.io/blog/2021/01/18/aws-route-53.html&quot; target=&quot;_blank&quot;&gt;지난 포스팅&lt;/a&gt;에서 Route53에 DNS 정보를 등록해서 도메인을 연결했었죠    &lt;br /&gt;
 검증을 위해서 아래의 CNAME 기록을 Route53에 DNS 구성에 추가하면 검증이 완료됩니다&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-22/validation.png&quot; alt=&quot;Validation&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Elastic Beanstalk로 애플리케이션 등록과 관리</title><link href="http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk.html" rel="alternate" type="text/html" title="Elastic Beanstalk로 애플리케이션 등록과 관리" /><published>2021-01-21T00:00:00+09:00</published><updated>2021-01-23T19:45:15+09:00</updated><id>http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk.html">&lt;!--more--&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-22/validation.png&quot; alt=&quot;Validation&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Elastic Beanstalk로 애플리케이션 등록과 관리</title><link href="http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk.html" rel="alternate" type="text/html" title="Elastic Beanstalk로 애플리케이션 등록과 관리" /><published>2021-01-21T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#create&quot; id=&quot;markdown-toc-create&quot;&gt;Create&lt;/a&gt;    &lt;ul&gt;
@@ -587,7 +772,7 @@ Elastic Beanstalk는 구축한 애플리케이션 서버를 관리할 때 사용
 
 &lt;blockquote&gt;
   &lt;p&gt;Elastic Beanstalk 환경 설정은 전체메뉴의 컴퓨팅 - Elastic Beanstalk - 환경에서 설정할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Route53으로 도메인 주소에 호스팅 연결하기</title><link href="http://localhost:4000/blog/2021/01/18/aws-route-53.html" rel="alternate" type="text/html" title="Route53으로 도메인 주소에 호스팅 연결하기" /><published>2021-01-18T00:00:00+09:00</published><updated>2021-01-24T18:20:23+09:00</updated><id>http://localhost:4000/blog/2021/01/18/aws-route-53</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/18/aws-route-53.html">&lt;!--more--&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Route53으로 도메인 주소에 호스팅 연결하기</title><link href="http://localhost:4000/blog/2021/01/18/aws-route-53.html" rel="alternate" type="text/html" title="Route53으로 도메인 주소에 호스팅 연결하기" /><published>2021-01-18T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/18/aws-route-53</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/18/aws-route-53.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#route53&quot; id=&quot;markdown-toc-route53&quot;&gt;Route53&lt;/a&gt;    &lt;ul&gt;
@@ -656,7 +841,7 @@ Elastic Beanstalk는 구축한 애플리케이션 서버를 관리할 때 사용
 
 &lt;blockquote&gt;
   &lt;p&gt;IPv4 혹은 Application Load Balancer 둘 중 하나만 설정해서 총 4개의 레코드가 필요합니다&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(2)</title><link href="http://localhost:4000/blog/2021/01/17/aws-security-group.html" rel="alternate" type="text/html" title="EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(2)" /><published>2021-01-17T00:00:00+09:00</published><updated>2021-01-23T19:45:10+09:00</updated><id>http://localhost:4000/blog/2021/01/17/aws-security-group</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/17/aws-security-group.html">&lt;!--more--&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(2)</title><link href="http://localhost:4000/blog/2021/01/17/aws-security-group.html" rel="alternate" type="text/html" title="EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(2)" /><published>2021-01-17T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/17/aws-security-group</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/17/aws-security-group.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#ec2&quot; id=&quot;markdown-toc-ec2&quot;&gt;EC2&lt;/a&gt;&lt;/li&gt;
@@ -737,239 +922,4 @@ EC2는 가상 서버를 구축하고 보안 및 네트워크 구성과 스토리
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-17/instance.png&quot; alt=&quot;Instance&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;상세페이지의 연결 섹션에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(1)</title><link href="http://localhost:4000/blog/2021/01/16/aws-security-group.html" rel="alternate" type="text/html" title="EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(1)" /><published>2021-01-16T00:00:00+09:00</published><updated>2021-01-23T19:45:05+09:00</updated><id>http://localhost:4000/blog/2021/01/16/aws-security-group</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/16/aws-security-group.html">&lt;!--more--&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#ec2&quot; id=&quot;markdown-toc-ec2&quot;&gt;EC2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#보안-그룹&quot; id=&quot;markdown-toc-보안-그룹&quot;&gt;보안 그룹&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#vpc&quot; id=&quot;markdown-toc-vpc&quot;&gt;VPC&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#인바운드-규칙&quot; id=&quot;markdown-toc-인바운드-규칙&quot;&gt;인바운드 규칙&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#아웃바운드-규칙&quot; id=&quot;markdown-toc-아웃바운드-규칙&quot;&gt;아웃바운드 규칙&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#인스턴스&quot; id=&quot;markdown-toc-인스턴스&quot;&gt;인스턴스&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ec2&quot;&gt;EC2&lt;/h2&gt;
-
-&lt;p&gt;들어가기에 앞서, AWS는 사용 편의성과 성능 개선을 위해 주기적으로 화면을 업데이트 하므로  &lt;br /&gt;
-가장 최신의 포스팅을 찾아 참고하시는 것을 추천합니다. 이 포스팅은 2021년 1월 16일에 작성되었습니다. &lt;br /&gt;
-EC2는 가상 서버를 구축하고 보안 및 네트워크 구성과 스토리지 관리를 지원하죠 오늘은 EC2의 보안설정을 통해  &lt;br /&gt;
-서버를 보호하는 방법을 알아볼 겁니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/menu.png&quot; alt=&quot;Menu&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;보안설정은 전체메뉴의 컴퓨팅 - EC2 - 네트워크 및 보안 - 보안 그룹에서 설정할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;보안-그룹&quot;&gt;보안 그룹&lt;/h2&gt;
-
-&lt;p&gt;인스턴스는 미리 설치되어 있다는 전제 하에 진행하도록 하겠습니다&lt;br /&gt;
-보안 그룹 페이지에 들어오면 현재 생성된 보안그룹 리스트를 확인할 수 있습니다. &lt;br /&gt;
-우측 상단의 ‘보안 그룹 생성’ 버튼을 클릭하여 보안 그룹을 하나 만들어 보도록 하죠&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/register.png&quot; alt=&quot;Register Button&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;등록 페이지로 들어오면 보안 그룹의 기본 세부 정보를 입력합니다. 저는 server의 보안 그룹을 만들 것이므로   &lt;br /&gt;
-보안 그룹의 이름과 간단한 설명 그리고 VPC를 선택할 겁니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/info.png&quot; alt=&quot;Register Button&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;vpc&quot;&gt;VPC&lt;/h3&gt;
-
-&lt;p&gt;Amazon Virtual Private Cloud(VPC)를 이용하면 사용자가 정의한 가상 네트워크로 AWS 리소스를 시작할 수 있습니다.&lt;br /&gt;
-자세한 내용은 설명서의 &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html&quot; target=&quot;_blank&quot;&gt;VPC&lt;/a&gt;를 참고해 주세요.&lt;/p&gt;
-
-&lt;h3 id=&quot;인바운드-규칙&quot;&gt;인바운드 규칙&lt;/h3&gt;
-
-&lt;p&gt;인바운드 규칙은 서버와 데이터베이스로 접근하는 데이터가 들어올 수 있도록 규칙을 정의하는 것입니다&lt;br /&gt;
-만약 외부인이 DB에 접근해서 악의적으로 데이터를 조작하게 된다면 큰 문제가 되겠죠?   &lt;br /&gt;
-그렇기에 굉장히 중요한 작업입니다. 그럼 ‘규칙 추가’ 버튼을 눌러 아래와 같이 추가해 보겠습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/inbound.png&quot; alt=&quot;InBound&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;2개 포트에 대한 규칙을 추가해 줘야 합니다 HTTP와 SSH를 설정해야 하는데요    &lt;br /&gt;
-HTTP 80번 포트는 외부인들도 접근이 가능해야 하므로 모든 IPv4 트래픽(0.0.0.0/0)과 IPv6 트래픽(::/0)을 설정해 줘야 합니다. &lt;br /&gt;
-SSH 22번 포트는 본인 혹은 권한이 있는 사람만 접속돼야 하므로 해당 IP 주소만 등록합니다&lt;/p&gt;
-
-&lt;h3 id=&quot;아웃바운드-규칙&quot;&gt;아웃바운드 규칙&lt;/h3&gt;
-
-&lt;p&gt;인바운드 규칙과 반대로 데이터를 서버와 데이터베이스에서 내보낼 수 있도록 규칙을 정의하는 것입니다&lt;br /&gt;
-아웃바운드의 경우 기본 설정된 모든 트래픽 유형 하나만 추가하면 됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/outbound.png&quot; alt=&quot;OutBound&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;하단의 ‘보안 그룹 생성’ 버튼을 눌러주면 리스트에 새로 추가된 보안 그룹을 확인할 수 있습니다.&lt;br /&gt;
-그럼 이제 생성한 보안 그룹을 인스턴스에 적용해 봐야겠죠?&lt;/p&gt;
-
-&lt;h3 id=&quot;인스턴스&quot;&gt;인스턴스&lt;/h3&gt;
-
-&lt;p&gt;서버를 설치하게 되면 자동으로 인스턴스가 생성되는데요 해당 인스턴스에 조금 전에 설정했던   &lt;br /&gt;
-보안 그룹을 추가하기 위해 아래의 메뉴로 이동합니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/menu2.png&quot; alt=&quot;Menu&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;인스턴스 설정은 전체메뉴의 컴퓨팅 - EC2 - 인스턴스 - 인스턴스에서 설정할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;페이지로 이동하면 생성된 인스턴트 리스트가 보입니다. 설정하고 싶은 인스턴스의 좌측 체크박스를 누른 뒤&lt;br /&gt;
-우측의 작업 - 보안 - 보안 그룹 변경을 눌러 상세페이지로 이동합니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/instance.png&quot; alt=&quot;Instance&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;연결된 보안 그룹에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Mongoose(Express)로 MongoDB 데이터 추가하기(2)</title><link href="http://localhost:4000/blog/2021/01/13/nodejs-express-mongodb-mongoose.html" rel="alternate" type="text/html" title="Mongoose(Express)로 MongoDB 데이터 추가하기(2)" /><published>2021-01-13T00:00:00+09:00</published><updated>2021-01-16T16:43:19+09:00</updated><id>http://localhost:4000/blog/2021/01/13/nodejs-express-mongodb-mongoose</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/13/nodejs-express-mongodb-mongoose.html">&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#model&quot; id=&quot;markdown-toc-model&quot;&gt;Model&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#defining-schema&quot; id=&quot;markdown-toc-defining-schema&quot;&gt;Defining Schema&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#view&quot; id=&quot;markdown-toc-view&quot;&gt;View&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#routes&quot; id=&quot;markdown-toc-routes&quot;&gt;Routes&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#pug&quot; id=&quot;markdown-toc-pug&quot;&gt;Pug&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#controller&quot; id=&quot;markdown-toc-controller&quot;&gt;Controller&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#folder-structure&quot; id=&quot;markdown-toc-folder-structure&quot;&gt;Folder Structure&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;model&quot;&gt;Model&lt;/h2&gt;
-
-&lt;p&gt;지난 포스팅에서는 Mongoose의 create함수를 이용하여 DB에 데이터를 추가 해봤는데요&lt;br /&gt;
-이번에는 DB에 하나씩 추가되는게 아닌 아래의 그림과 같이 타입별로 데이터가 추가되고&lt;br /&gt;
-여러개의 데이터를 result 배열에 담아서 DB에 저장하는 예제를 통해 데이터 업데이트 방법을 알아볼 겁니다&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-13/user.png&quot; alt=&quot;FolderStructure&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;모든 파일 경로는 &lt;a href=&quot;https://mujaen.github.io/blog/2021/01/10/nodejs-express-mongodb-mongoose.html&quot; target=&quot;_blank&quot;&gt;지난 포스팅&lt;/a&gt;에서 설정한 그대로 진행하니 참고해 주세요!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;defining-schema&quot;&gt;Defining Schema&lt;/h3&gt;
-
-&lt;p&gt;먼저, 스키마를 수정해 보죠 type 으로 유저를 구분할 것이기 때문에 값을 String으로 받는  &lt;br /&gt;
-type 이라는 key를 하나 추가해서 모델을 하나 만들어 내보냅니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mongoose&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;mongoose&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;schema&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mongoose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Schema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UserSchema&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;schema&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;na&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-            &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;na&quot;&gt;required&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mongoose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UserSchema&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;view&quot;&gt;View&lt;/h2&gt;
-
-&lt;p&gt;모델을 수정하였다면 지난 포스팅에서 만든 등록페이지와 라우팅을 수정합니다. &lt;br /&gt;
-Pug와 Router 설정은 &lt;a href=&quot;https://mujaen.github.io/blog/2021/01/05/nodejs-express-mongodb-mongoose.html&quot; target=&quot;_blank&quot;&gt;지난 포스팅&lt;/a&gt;을 참고해 주세요!&lt;/p&gt;
-
-&lt;h3 id=&quot;routes&quot;&gt;Routes&lt;/h3&gt;
-
-&lt;p&gt;라우팅은 수정없이 registerUser 그대로 사용하겠습니다 아래와 같이 설정해 주세요.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;express&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;express&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Router&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UserController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../controllers/user&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/user/register&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UserController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/api/user/list&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;UserController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;pug&quot;&gt;Pug&lt;/h3&gt;
-
-&lt;p&gt;register.pug 파일을 열고 아래와 같이 수정해 주세요. &lt;br /&gt;
-등록되는 유저를 select로 Admin과 Guest로 구분할 겁니다&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-pug&quot;&gt;doctype html
-html
-	head
-		title 유저 등록
-	body
-		form(method=&quot;post&quot;, action=&quot;/api/user/list&quot;)
-                        select(name=&quot;type&quot; id=&quot;&quot;)
-                                option(value=&quot;admin&quot; selected) Admin
-                                option(value=&quot;guest&quot;) Guest
-                        input(type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot;)
-                        input(type=&quot;text&quot; name=&quot;age&quot; value=&quot;&quot;)
-                        button(type=&quot;submit&quot;) 저장
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;controller&quot;&gt;Controller&lt;/h2&gt;
-
-&lt;p&gt;이제 제일 중요한 컨트롤러를 수정해보죠. controllers 폴더의 user.js 파일을 열고 아래와 같이 수정합니다        &lt;br /&gt;
-registerUser를 같이 보죠. 등록페이지의 form에서 submit 이벤트가 발생하면 req.body를 사용해서   &lt;br /&gt;
-request로 type의 값을 받아올 겁니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../models/user&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listUser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;user/register&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;registerUser&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-                &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-                &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;na&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;updateOne&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;$set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;upsert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;redirect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;/user/register&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;updateOne 함수로 DB에 데이터를 업데이트 해보죠 try와 catch를 이용합니다&lt;br /&gt;
-첫 번째 인자는 데이터를 filter 할 수 있도록 하는데요 type을 가지고 구분할 것이므로 type 값을 넘겨줍니다&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;upsert 옵션은 업데이트할 시 DB에 데이터가 없는 경우 자동으로 데이터를 insert 해줍니다&lt;br /&gt;
-이때, 변경하고 싶은 데이터를 $set으로 지정해 주지 않으면 해당 데이터를 제외한 다른 데이터는 모두 지워집니다&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;folder-structure&quot;&gt;Folder Structure&lt;/h3&gt;
-
-&lt;p&gt;전체 폴더 구조입니다. 궁금한 내용은 아래 댓글로 남겨주세요! &lt;br /&gt;
-다음 포스팅에서는 DB에 추가된 데이터를 업데이트 하는 내용을 진행하도록 하겠습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-10/folder.png&quot; alt=&quot;FolderStructure&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="nodejs" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;상세페이지의 연결 섹션에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry></feed>
