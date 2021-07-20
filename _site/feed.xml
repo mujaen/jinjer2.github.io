@@ -1,28 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-14T22:17:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">자바스크립트 라이브러리 현황 및 발전 방향</title><link href="http://localhost:4000/blog/2021/07/14/javascript-framework.html" rel="alternate" type="text/html" title="자바스크립트 라이브러리 현황 및 발전 방향" /><published>2021-07-14T00:00:00+09:00</published><updated>2021-07-14T17:39:47+09:00</updated><id>http://localhost:4000/blog/2021/07/14/javascript-framework</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/14/javascript-framework.html">&lt;!--more--&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-20T12:55:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">자바스크립트 현황 및 최신 동향</title><link href="http://localhost:4000/blog/2021/07/14/javascript-framework.html" rel="alternate" type="text/html" title="자바스크립트 현황 및 최신 동향" /><published>2021-07-14T00:00:00+09:00</published><updated>2021-07-20T12:55:04+09:00</updated><id>http://localhost:4000/blog/2021/07/14/javascript-framework</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/14/javascript-framework.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#서론&quot; id=&quot;markdown-toc-서론&quot;&gt;서론&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-2장-자바스크립트-라이브러리의-개념-및-현황&quot; id=&quot;markdown-toc-제-2장-자바스크립트-라이브러리의-개념-및-현황&quot;&gt;제 2장. 자바스크립트 라이브러리의 개념 및 현황&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-개념&quot; id=&quot;markdown-toc-1-개념&quot;&gt;1. 개념&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-현황&quot; id=&quot;markdown-toc-2-현황&quot;&gt;2. 현황&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-2장-juqery&quot; id=&quot;markdown-toc-제-2장-juqery&quot;&gt;제 2장. Juqery&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#자바스크립트&quot; id=&quot;markdown-toc-자바스크립트&quot;&gt;자바스크립트&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-연혁&quot; id=&quot;markdown-toc-1-연혁&quot;&gt;1. 연혁&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-기술적-특징&quot; id=&quot;markdown-toc-2-기술적-특징&quot;&gt;2. 기술적 특징&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-표준화&quot; id=&quot;markdown-toc-2-표준화&quot;&gt;2. 표준화&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-3장-react&quot; id=&quot;markdown-toc-제-3장-react&quot;&gt;제 3장. React&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-연혁-1&quot; id=&quot;markdown-toc-1-연혁-1&quot;&gt;1. 연혁&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-기술적-특징-1&quot; id=&quot;markdown-toc-2-기술적-특징-1&quot;&gt;2. 기술적 특징&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#자바스크립트-특징&quot; id=&quot;markdown-toc-자바스크립트-특징&quot;&gt;자바스크립트 특징&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-언어적-특징&quot; id=&quot;markdown-toc-1-언어적-특징&quot;&gt;1. 언어적 특징&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#1-인터프리터-언어&quot; id=&quot;markdown-toc-1-인터프리터-언어&quot;&gt;(1). 인터프리터 언어&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#2-프로토타입-기반-언어&quot; id=&quot;markdown-toc-2-프로토타입-기반-언어&quot;&gt;(2). 프로토타입 기반 언어&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#3-동적-타입-언어&quot; id=&quot;markdown-toc-3-동적-타입-언어&quot;&gt;(3). 동적 타입 언어&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-기술적-특징&quot; id=&quot;markdown-toc-2-기술적-특징&quot;&gt;2. 기술적 특징&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#1-클라이언트&quot; id=&quot;markdown-toc-1-클라이언트&quot;&gt;(1). 클라이언트&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#1-dom&quot; id=&quot;markdown-toc-1-dom&quot;&gt;1) DOM&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#2-xmlhttprequest&quot; id=&quot;markdown-toc-2-xmlhttprequest&quot;&gt;2) XMLHttpRequest&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#2-서버&quot; id=&quot;markdown-toc-2-서버&quot;&gt;(2). 서버&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-3장-차이점-및-발전-방향&quot; id=&quot;markdown-toc-제-3장-차이점-및-발전-방향&quot;&gt;제 3장. 차이점 및 발전 방향&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-차이점&quot; id=&quot;markdown-toc-1-차이점&quot;&gt;1. 차이점&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-발전-방향&quot; id=&quot;markdown-toc-2-발전-방향&quot;&gt;2. 발전 방향&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#자바스크립트-동향&quot; id=&quot;markdown-toc-자바스크립트-동향&quot;&gt;자바스크립트 동향&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-프레임워크&quot; id=&quot;markdown-toc-1-프레임워크&quot;&gt;1. 프레임워크&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-타입-사용&quot; id=&quot;markdown-toc-2-타입-사용&quot;&gt;2. 타입 사용&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#1-필요성과-문제점&quot; id=&quot;markdown-toc-1-필요성과-문제점&quot;&gt;(1). 필요성과 문제점&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#2-타입스크립트&quot; id=&quot;markdown-toc-2-타입스크립트&quot;&gt;(2). 타입스크립트&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-5장-결론&quot; id=&quot;markdown-toc-제-5장-결론&quot;&gt;제 5장. 결론&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#향후-전망&quot; id=&quot;markdown-toc-향후-전망&quot;&gt;향후 전망&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-다형성&quot; id=&quot;markdown-toc-1-다형성&quot;&gt;1. 다형성&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-대체-언어의-등장과-종말&quot; id=&quot;markdown-toc-2-대체-언어의-등장과-종말&quot;&gt;2. 대체 언어의 등장과 종말&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#결론&quot; id=&quot;markdown-toc-결론&quot;&gt;결론&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#참고문헌&quot; id=&quot;markdown-toc-참고문헌&quot;&gt;참고문헌&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -30,161 +47,124 @@
 
 &lt;h2 id=&quot;서론&quot;&gt;서론&lt;/h2&gt;
 
-&lt;p&gt;1,연구의 주제를 언급하되, 관심을 가지게 된 동기와 현재 연구의 주제가 가지는 의미를 기술한다&lt;br /&gt;
-2.연구자의 관심사는 무엇이며 현재 언론이나 대중매체에서의 연구분야에 대한 관점을 언급&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;연구 분야의 발전 이력이나 발전 방향에 대해서 기술&lt;/li&gt;
-&lt;/ol&gt;
-
 &lt;p&gt;2009년 발표된 Node.js가 시장에 도입된 직후 자바스크립트 생태계는 큰 변화를 맞이하였다&lt;br /&gt;
 브라우저 런타임으로만 동작하던 자바스크립트를 새로운 환경의 런타임을 통해 실행할 수 있었고&lt;br /&gt;
 웹사이트 뿐만 아니라 서버까지 자바스크립트를 기반으로 구현할 수 있게 되었다&lt;/p&gt;
 
-&lt;p&gt;이후 노드 환경에서의 모듈 및 라이브러리 도구들을 관리하고 공유할 수 있는 &lt;br /&gt;
+&lt;p&gt;이후 노드 환경에서의 모듈 및 라이브러리 도구들을 관리하고 타인에게 공유할 수 있는 &lt;br /&gt;
 노드 패키지 매니저(Node Package Manager)가 출시되었고&lt;br /&gt;
-전세계의 수 많은 엔지니어와 기업들은 쏟아내듯 공개하였다&lt;/p&gt;
+전세계의 수 많은 엔지니어와 기업들은 쏟아내듯 자바스크립트 프레임워크와 라이브러리를 공개하였다&lt;/p&gt;
 
-&lt;p&gt;기존 라이브러리만으로는 고도화된 웹개발에 있어서 &lt;br /&gt;
-한계가 있음을 깨달은 업계에서는 페이스북을 선두로 라이브러리와 프레임워크들이 생겨났다&lt;/p&gt;
+&lt;p&gt;더 나아가 모바일 네이티브 플랫폼과 통신하며 개발자가 자바스크립트로 코드를 작성하고 컴파일을 통해 
+직접 모바일앱까지 제어하면서 그 영향이 나날이 커지고 있다&lt;/p&gt;
 
-&lt;p&gt;하지만 우후죽순으로 개발된 라이브러리와 프레임워크로 인하여 현재 프론트엔드 시장은 혼란을 가져 올 수 있기에&lt;br /&gt;
-프로젝트 방향과 환경에 맞는 라이브러리 선택을 위해 구체적인 분석이 필요하다&lt;/p&gt;
+&lt;p&gt;최근 8년동안 최상위 랭크로 높은 관심도를 받는 자바스크립트이고 새로운 프레임워크와 타입 도입 등 
+의견이 나오는 시점에서 빠르게 변화하고 발전하는 자바스크립트 동향에 대하여 다각적인 분석이 필요하다&lt;/p&gt;
 
-&lt;p&gt;자바스크립트 라이브러리의 현황 및 여러 종류의 라이브러리 유형을 분석하고 
-발전 방향에 대한 연구목적이 있다&lt;/p&gt;
+&lt;p&gt;자바스크립트 현황 및 공개된 여러 방면의 최신 동향을 분석하고 
+향후 전망에 대한 연구목적이 있다&lt;/p&gt;
 
-&lt;h2 id=&quot;제-2장-자바스크립트-라이브러리의-개념-및-현황&quot;&gt;제 2장. 자바스크립트 라이브러리의 개념 및 현황&lt;/h2&gt;
-
-&lt;h3 id=&quot;1-개념&quot;&gt;1. 개념&lt;/h3&gt;
-
-&lt;h3 id=&quot;2-현황&quot;&gt;2. 현황&lt;/h3&gt;
-
-&lt;h2 id=&quot;제-2장-juqery&quot;&gt;제 2장. Juqery&lt;/h2&gt;
+&lt;h2 id=&quot;자바스크립트&quot;&gt;자바스크립트&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-연혁&quot;&gt;1. 연혁&lt;/h3&gt;
 
+&lt;p&gt;1990년 초중반 Microsoft는 Internet Explorer를 내세워 브라우저 시장을 독점하길 원했고 &lt;br /&gt;
+당시 75% 이상의 점유율을 가진 넷스케이프 커뮤니케이션즈(Netscape Communications)의 &lt;br /&gt;
+Navigator과 경쟁하였다&lt;/p&gt;
+
+&lt;p&gt;1995년 Netscape는 정적 HTML에 동적 이벤트 추가를 위해 경량 프로그래밍 언어를 도입하기 원하였고 &lt;br /&gt;
+브렌던 아이크(Brendan Eich)에 의해 단 10일만에 프로토타입으로 개발된 모카(Mocha)는 &lt;br /&gt;
+이후 라이브 스크립트(LiveScript)로 명명되어 개발되었고 최종적으로 자바스크립트(JavaScript)로 불리게 된다&lt;/p&gt;
+
+&lt;p&gt;Microsoft는 자바스크립트 출시 이후 이에 맞설 대항마로 JScript를 개발하였고     &lt;br /&gt;
+Internet Explorer 3.0에 처음 탑재하여 브라우저에 지원되었다&lt;/p&gt;
+
+&lt;h3 id=&quot;2-표준화&quot;&gt;2. 표준화&lt;/h3&gt;
+
+&lt;p&gt;Microsoft와 Netscape는 브라우저 점유율 탈환을 위해 점차 각자만의 기능을 추가 하였고&lt;br /&gt;
+이는 서로간의 호환을 어렵게 만들었고 결국 동일한 웹페이지 내의 크로스브라우징 문제를 유발하였다&lt;/p&gt;
+
+&lt;p&gt;Netscape는 자바스크립트가 공식적인 언어로 표준화 되길 원하였고 1996년 국제적 정보 통신 기술 표준화 기구인   &lt;br /&gt;
+ECMA 인터내셔널에게 요청한다 이때 Microsoft의 JScript와 Adobe의 ActionScript까지 포함되며   &lt;br /&gt;
+ECMA-262라는 새로운 기술 규격이 만들어졌고 ECMA-262는 자바스크립트의 파편화를 방지하고 모든 브라우저를 동일하게 &lt;br /&gt;
+동작할 수 있도록 표준화 하였다 이후 ECMA-262 기술 규격에 따라 자바스크립트는 ECMAScript로 명명된다&lt;/p&gt;
+
+&lt;h2 id=&quot;자바스크립트-특징&quot;&gt;자바스크립트 특징&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-언어적-특징&quot;&gt;1. 언어적 특징&lt;/h3&gt;
+
+&lt;p&gt;자바스크립트는 C로 부터 영향을 받은 객체 기반의 동적 프로그래밍 언어로 기본적인 문법이 유사하며           &lt;br /&gt;
+다음과 같은 언어적 특징이 있다&lt;/p&gt;
+
+&lt;h4 id=&quot;1-인터프리터-언어&quot;&gt;(1). 인터프리터 언어&lt;/h4&gt;
+
+&lt;p&gt;인터프리터 언어인 자바스크립트는 원시코드를 컴파일 과정없이 해석하여 명령어를 실행되는 언어이다&lt;br /&gt;
+다만 런타임에서 실시간으로 브라우저의 인터프리터가 코드를 실행하므로 컴파일 언어에 비해 속도는 느리다&lt;/p&gt;
+
+&lt;h4 id=&quot;2-프로토타입-기반-언어&quot;&gt;(2). 프로토타입 기반 언어&lt;/h4&gt;
+
+&lt;p&gt;프로토타입 기반 언어인 자바스크립트는 상속과는 다르게 객체를 원형 객체를 복제하여 새로운 객체를 생성하고  &lt;br /&gt;
+생성된 객체는 프로토타입 링크를 사용해서 원형을 참조한다 이때, 객체들 사이의 형성된 각각의 링크들을  &lt;br /&gt;
+프로토타입 체인이라 하며 이를 통해 원형 객체의 메서드나 속성을 찾아갈 수 있다&lt;/p&gt;
+
+&lt;h4 id=&quot;3-동적-타입-언어&quot;&gt;(3). 동적 타입 언어&lt;/h4&gt;
+
+&lt;p&gt;변수에 타입 선언이 필요없는 자바스크립트는 런타임 시 값의 타입을 기준으로 자동으로 변수의 타입이 지정된다    &lt;br /&gt;
+이를 느슨한 타입(Loosely typed)이라 하며 하나의 변수에 여러 타입을 선언할 수 있다&lt;/p&gt;
+
 &lt;h3 id=&quot;2-기술적-특징&quot;&gt;2. 기술적 특징&lt;/h3&gt;
 
-&lt;h2 id=&quot;제-3장-react&quot;&gt;제 3장. React&lt;/h2&gt;
+&lt;p&gt;자바스크립트는 단일스레드 기반의 콜백 큐를 사용하는 언어로 클라이언트와 서버에서 동작되며 
+다음과 같은 기술적 특징이 있다&lt;/p&gt;
 
-&lt;h3 id=&quot;1-연혁-1&quot;&gt;1. 연혁&lt;/h3&gt;
+&lt;h4 id=&quot;1-클라이언트&quot;&gt;(1). 클라이언트&lt;/h4&gt;
 
-&lt;h3 id=&quot;2-기술적-특징-1&quot;&gt;2. 기술적 특징&lt;/h3&gt;
+&lt;p&gt;웹브라우저에서 사용되는 자바스크립트 기술로 DOM 수정 및 데이터 바인딩을 위해      &lt;br /&gt;
+XMLHttpRequest로 서버와 통신하는데 쓰이기도 하며 Window Object 객체를 활용하여&lt;br /&gt;
+Window 객체의 프로퍼티와 메서드를 조작하거나 이벤트 핸들러를 수행한다&lt;/p&gt;
 
-&lt;h2 id=&quot;제-3장-차이점-및-발전-방향&quot;&gt;제 3장. 차이점 및 발전 방향&lt;/h2&gt;
+&lt;h5 id=&quot;1-dom&quot;&gt;1) DOM&lt;/h5&gt;
 
-&lt;h3 id=&quot;1-차이점&quot;&gt;1. 차이점&lt;/h3&gt;
+&lt;p&gt;DOM은 HTML, XML 문서의 프로그래밍 인터페이스로 웹페이지의 구조화된 표현을 위해 사용된다  &lt;br /&gt;
+프로그래밍 언어가 돔의 구조에 접근하여 스타일 및 내용 변경 및 조작이 가능하도록 설계되었다&lt;br /&gt;
+최근엔 자바스크립트 프레임워크를 사용하여 돔을 직접 수정하지 않고 가상돔(Virtual DOM)에서&lt;br /&gt;
+변경사항을 처리한 뒤 동기화하는 방식으로 효율성과 유지보수성을 극대화 하고 있다&lt;/p&gt;
 
-&lt;h3 id=&quot;2-발전-방향&quot;&gt;2. 발전 방향&lt;/h3&gt;
+&lt;h5 id=&quot;2-xmlhttprequest&quot;&gt;2) XMLHttpRequest&lt;/h5&gt;
 
-&lt;h2 id=&quot;제-5장-결론&quot;&gt;제 5장. 결론&lt;/h2&gt;
+&lt;p&gt;서버와의 통신을 위해서는 HTTP request를 제어할 오브젝트가 필요하다  &lt;br /&gt;
+자바스크립트는 서버와의 상호 작용을 위해 XMLHttpRequest 객체를 사용할 수 있고    &lt;br /&gt;
+통신 처리중에는 페이지를 새로고침할 필요 없이 데이터 요청 및 상태를 반환할 수 있다&lt;/p&gt;
 
-&lt;h4 id=&quot;참고문헌&quot;&gt;참고문헌&lt;/h4&gt;
+&lt;h4 id=&quot;2-서버&quot;&gt;(2). 서버&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://docs.npmjs.com/&quot;&gt;npm 공식사이트&lt;/a&gt;
-&lt;a href=&quot;https://classic.yarnpkg.com/en/docs&quot;&gt;yarn 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">자바스크립트 패키지 매니저의 현황과 발전 방향</title><link href="http://localhost:4000/blog/2021/07/12/javascript-packager.html" rel="alternate" type="text/html" title="자바스크립트 패키지 매니저의 현황과 발전 방향" /><published>2021-07-12T00:00:00+09:00</published><updated>2021-07-14T15:06:42+09:00</updated><id>http://localhost:4000/blog/2021/07/12/javascript-packager</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/12/javascript-packager.html">&lt;!--more--&gt;
+&lt;p&gt;웹서버에서 사용되는 자바스크립트 기술로 대표적으로 Node.js 플랫폼을 이용한 런타임 환경을 제공하여        &lt;br /&gt;
+단일스레드 비동기 IO방식의 고성능의 서버 기능을 지원한다&lt;/p&gt;
 
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-1장-서론&quot; id=&quot;markdown-toc-제-1장-서론&quot;&gt;제 1장. 서론&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-1장-자바스크립트-패키지-매니저&quot; id=&quot;markdown-toc-제-1장-자바스크립트-패키지-매니저&quot;&gt;제 1장. 자바스크립트 패키지 매니저&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-개념&quot; id=&quot;markdown-toc-1-개념&quot;&gt;1. 개념&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-효과&quot; id=&quot;markdown-toc-2-효과&quot;&gt;2. 효과&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-2장-클라이언트&quot; id=&quot;markdown-toc-제-2장-클라이언트&quot;&gt;제 2장. 클라이언트&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-npm&quot; id=&quot;markdown-toc-1-npm&quot;&gt;1. npm&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#1-연혁&quot; id=&quot;markdown-toc-1-연혁&quot;&gt;(1) 연혁&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#2-기술적-특징&quot; id=&quot;markdown-toc-2-기술적-특징&quot;&gt;(2) 기술적 특징&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-yarn&quot; id=&quot;markdown-toc-2-yarn&quot;&gt;2. yarn&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#1-연혁-1&quot; id=&quot;markdown-toc-1-연혁-1&quot;&gt;(1) 연혁&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#2-기술적-특징-1&quot; id=&quot;markdown-toc-2-기술적-특징-1&quot;&gt;(2) 기술적 특징&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-3장-문제점과-방안&quot; id=&quot;markdown-toc-제-3장-문제점과-방안&quot;&gt;제 3장. 문제점과 방안&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-문제점&quot; id=&quot;markdown-toc-1-문제점&quot;&gt;1. 문제점&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-방안&quot; id=&quot;markdown-toc-1-방안&quot;&gt;1. 방안&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-4장-시장-현황과-발전-방향&quot; id=&quot;markdown-toc-제-4장-시장-현황과-발전-방향&quot;&gt;제 4장. 시장 현황과 발전 방향&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-시장-현황&quot; id=&quot;markdown-toc-1-시장-현황&quot;&gt;1. 시장 현황&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-발전-방향&quot; id=&quot;markdown-toc-2-발전-방향&quot;&gt;2. 발전 방향&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#제-5장-결론&quot; id=&quot;markdown-toc-제-5장-결론&quot;&gt;제 5장. 결론&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#참고문헌&quot; id=&quot;markdown-toc-참고문헌&quot;&gt;참고문헌&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&quot;자바스크립트-동향&quot;&gt;자바스크립트 동향&lt;/h2&gt;
 
-&lt;h2 id=&quot;제-1장-서론&quot;&gt;제 1장. 서론&lt;/h2&gt;
+&lt;h3 id=&quot;1-프레임워크&quot;&gt;1. 프레임워크&lt;/h3&gt;
 
-&lt;p&gt;1,연구의 주제를 언급하되, 관심을 가지게 된 동기와 현재 연구의 주제가 가지는 의미를 기술한다
-2.연구자의 관심사는 무엇이며 현재 언론이나 대중매체에서의 연구분야에 대한 관점을 언급&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;연구 분야의 발전 이력이나 발전 방향에 대해서 기술&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;2-타입-사용&quot;&gt;2. 타입 사용&lt;/h3&gt;
 
-&lt;p&gt;프로그래머
-2009년 발표된 Node.js가 도입된 직후  자바스크립트 패키지 매니저는&lt;/p&gt;
+&lt;h4 id=&quot;1-필요성과-문제점&quot;&gt;(1). 필요성과 문제점&lt;/h4&gt;
 
-&lt;p&gt;Node.js가 도입된 직후 프론트엔드 영역에서의 큰 변화를 불러온 패키지매니저에 대하여 다루고 싶다
-그러하여 산업 전반에서 이러한 패키저의 역할이 점 차 대두되었는데
-프론트엔드 개발자로&lt;/p&gt;
+&lt;h4 id=&quot;2-타입스크립트&quot;&gt;(2). 타입스크립트&lt;/h4&gt;
 
-&lt;p&gt;자바스크립트 패키저의 탄생비화와  자바스크립트 패키지 매니저의
-발전 방향에 대해서  연구목적이 있다&lt;/p&gt;
+&lt;h2 id=&quot;향후-전망&quot;&gt;향후 전망&lt;/h2&gt;
 
-&lt;h2 id=&quot;제-1장-자바스크립트-패키지-매니저&quot;&gt;제 1장. 자바스크립트 패키지 매니저&lt;/h2&gt;
+&lt;h3 id=&quot;1-다형성&quot;&gt;1. 다형성&lt;/h3&gt;
 
-&lt;h3 id=&quot;1-개념&quot;&gt;1. 개념&lt;/h3&gt;
+&lt;h3 id=&quot;2-대체-언어의-등장과-종말&quot;&gt;2. 대체 언어의 등장과 종말&lt;/h3&gt;
 
-&lt;h3 id=&quot;2-효과&quot;&gt;2. 효과&lt;/h3&gt;
-
-&lt;h2 id=&quot;제-2장-클라이언트&quot;&gt;제 2장. 클라이언트&lt;/h2&gt;
-
-&lt;h3 id=&quot;1-npm&quot;&gt;1. npm&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;앱에 맞게 코드 패키지를 조정하거나 패키지를 그대로 통합할 수 있다.&lt;/li&gt;
-  &lt;li&gt;코드 및 코드 종속성의 여러 버전을 관리합니다.&lt;/li&gt;
-  &lt;li&gt;기본 코드가 업데이트되면 애플리케이션을 쉽게 업데이트할 수 있습니다.&lt;/li&gt;
-  &lt;li&gt;바로 사용할 수 있는 독립 실행형 도구를 다운로드할 수 있다&lt;/li&gt;
-  &lt;li&gt;npx를 사용하여 다운로드하지 않고 패키지를 실행가능하다&lt;/li&gt;
-  &lt;li&gt;어디서든 모든 npm 사용자와 코드를 공유할 수 있다&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;1-연혁&quot;&gt;(1) 연혁&lt;/h4&gt;
-
-&lt;h4 id=&quot;2-기술적-특징&quot;&gt;(2) 기술적 특징&lt;/h4&gt;
-
-&lt;h3 id=&quot;2-yarn&quot;&gt;2. yarn&lt;/h3&gt;
-
-&lt;h4 id=&quot;1-연혁-1&quot;&gt;(1) 연혁&lt;/h4&gt;
-
-&lt;h4 id=&quot;2-기술적-특징-1&quot;&gt;(2) 기술적 특징&lt;/h4&gt;
-
-&lt;h2 id=&quot;제-3장-문제점과-방안&quot;&gt;제 3장. 문제점과 방안&lt;/h2&gt;
-
-&lt;h3 id=&quot;1-문제점&quot;&gt;1. 문제점&lt;/h3&gt;
-
-&lt;h3 id=&quot;1-방안&quot;&gt;1. 방안&lt;/h3&gt;
-
-&lt;h2 id=&quot;제-4장-시장-현황과-발전-방향&quot;&gt;제 4장. 시장 현황과 발전 방향&lt;/h2&gt;
-
-&lt;h3 id=&quot;1-시장-현황&quot;&gt;1. 시장 현황&lt;/h3&gt;
-
-&lt;h3 id=&quot;2-발전-방향&quot;&gt;2. 발전 방향&lt;/h3&gt;
-
-&lt;h2 id=&quot;제-5장-결론&quot;&gt;제 5장. 결론&lt;/h2&gt;
+&lt;h2 id=&quot;결론&quot;&gt;결론&lt;/h2&gt;
 
 &lt;h4 id=&quot;참고문헌&quot;&gt;참고문헌&lt;/h4&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://docs.npmjs.com/&quot;&gt;npm 공식사이트&lt;/a&gt;
-&lt;a href=&quot;https://classic.yarnpkg.com/en/docs&quot;&gt;yarn 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(3)</title><link href="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(3)" /><published>2021-02-07T00:00:00+09:00</published><updated>2021-06-16T17:46:33+09:00</updated><id>http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html">&lt;!--more--&gt;
+&lt;p&gt;Kyle Simson, 『타입과 문법, 스코프와 클로저』, 한빛미디어(2017), p26-35.&lt;br /&gt;
+Boris Cherny, 『타입스크립트 프로그래밍』, 인사이트(2020), p8-21.&lt;br /&gt;
+&lt;a href=&quot;https://www.springboard.com/blog/data-science/history-of-javascript/&quot;&gt;The History of JavaScript&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;github 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(3)</title><link href="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(3)" /><published>2021-02-07T00:00:00+09:00</published><updated>2021-06-16T17:46:33+09:00</updated><id>http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#server&quot; id=&quot;markdown-toc-server&quot;&gt;Server&lt;/a&gt;    &lt;ul&gt;
@@ -922,4 +902,86 @@ EC2는 가상 서버를 구축하고 보안 및 네트워크 구성과 스토리
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-17/instance.png&quot; alt=&quot;Instance&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;상세페이지의 연결 섹션에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;상세페이지의 연결 섹션에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(1)</title><link href="http://localhost:4000/blog/2021/01/16/aws-security-group.html" rel="alternate" type="text/html" title="EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(1)" /><published>2021-01-16T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/16/aws-security-group</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/16/aws-security-group.html">&lt;!--more--&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#ec2&quot; id=&quot;markdown-toc-ec2&quot;&gt;EC2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#보안-그룹&quot; id=&quot;markdown-toc-보안-그룹&quot;&gt;보안 그룹&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#vpc&quot; id=&quot;markdown-toc-vpc&quot;&gt;VPC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#인바운드-규칙&quot; id=&quot;markdown-toc-인바운드-규칙&quot;&gt;인바운드 규칙&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#아웃바운드-규칙&quot; id=&quot;markdown-toc-아웃바운드-규칙&quot;&gt;아웃바운드 규칙&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#인스턴스&quot; id=&quot;markdown-toc-인스턴스&quot;&gt;인스턴스&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ec2&quot;&gt;EC2&lt;/h2&gt;
+
+&lt;p&gt;들어가기에 앞서, AWS는 사용 편의성과 성능 개선을 위해 주기적으로 화면을 업데이트 하므로  &lt;br /&gt;
+가장 최신의 포스팅을 찾아 참고하시는 것을 추천합니다. 이 포스팅은 2021년 1월 16일에 작성되었습니다. &lt;br /&gt;
+EC2는 가상 서버를 구축하고 보안 및 네트워크 구성과 스토리지 관리를 지원하죠 오늘은 EC2의 보안설정을 통해  &lt;br /&gt;
+서버를 보호하는 방법을 알아볼 겁니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/menu.png&quot; alt=&quot;Menu&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;보안설정은 전체메뉴의 컴퓨팅 - EC2 - 네트워크 및 보안 - 보안 그룹에서 설정할 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;보안-그룹&quot;&gt;보안 그룹&lt;/h2&gt;
+
+&lt;p&gt;인스턴스는 미리 설치되어 있다는 전제 하에 진행하도록 하겠습니다&lt;br /&gt;
+보안 그룹 페이지에 들어오면 현재 생성된 보안그룹 리스트를 확인할 수 있습니다. &lt;br /&gt;
+우측 상단의 ‘보안 그룹 생성’ 버튼을 클릭하여 보안 그룹을 하나 만들어 보도록 하죠&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/register.png&quot; alt=&quot;Register Button&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;등록 페이지로 들어오면 보안 그룹의 기본 세부 정보를 입력합니다. 저는 server의 보안 그룹을 만들 것이므로   &lt;br /&gt;
+보안 그룹의 이름과 간단한 설명 그리고 VPC를 선택할 겁니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/info.png&quot; alt=&quot;Register Button&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;vpc&quot;&gt;VPC&lt;/h3&gt;
+
+&lt;p&gt;Amazon Virtual Private Cloud(VPC)를 이용하면 사용자가 정의한 가상 네트워크로 AWS 리소스를 시작할 수 있습니다.&lt;br /&gt;
+자세한 내용은 설명서의 &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html&quot; target=&quot;_blank&quot;&gt;VPC&lt;/a&gt;를 참고해 주세요.&lt;/p&gt;
+
+&lt;h3 id=&quot;인바운드-규칙&quot;&gt;인바운드 규칙&lt;/h3&gt;
+
+&lt;p&gt;인바운드 규칙은 서버와 데이터베이스로 접근하는 데이터가 들어올 수 있도록 규칙을 정의하는 것입니다&lt;br /&gt;
+만약 외부인이 DB에 접근해서 악의적으로 데이터를 조작하게 된다면 큰 문제가 되겠죠?   &lt;br /&gt;
+그렇기에 굉장히 중요한 작업입니다. 그럼 ‘규칙 추가’ 버튼을 눌러 아래와 같이 추가해 보겠습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/inbound.png&quot; alt=&quot;InBound&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2개 포트에 대한 규칙을 추가해 줘야 합니다 HTTP와 SSH를 설정해야 하는데요    &lt;br /&gt;
+HTTP 80번 포트는 외부인들도 접근이 가능해야 하므로 모든 IPv4 트래픽(0.0.0.0/0)과 IPv6 트래픽(::/0)을 설정해 줘야 합니다. &lt;br /&gt;
+SSH 22번 포트는 본인 혹은 권한이 있는 사람만 접속돼야 하므로 해당 IP 주소만 등록합니다&lt;/p&gt;
+
+&lt;h3 id=&quot;아웃바운드-규칙&quot;&gt;아웃바운드 규칙&lt;/h3&gt;
+
+&lt;p&gt;인바운드 규칙과 반대로 데이터를 서버와 데이터베이스에서 내보낼 수 있도록 규칙을 정의하는 것입니다&lt;br /&gt;
+아웃바운드의 경우 기본 설정된 모든 트래픽 유형 하나만 추가하면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/outbound.png&quot; alt=&quot;OutBound&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;하단의 ‘보안 그룹 생성’ 버튼을 눌러주면 리스트에 새로 추가된 보안 그룹을 확인할 수 있습니다.&lt;br /&gt;
+그럼 이제 생성한 보안 그룹을 인스턴스에 적용해 봐야겠죠?&lt;/p&gt;
+
+&lt;h3 id=&quot;인스턴스&quot;&gt;인스턴스&lt;/h3&gt;
+
+&lt;p&gt;서버를 설치하게 되면 자동으로 인스턴스가 생성되는데요 해당 인스턴스에 조금 전에 설정했던   &lt;br /&gt;
+보안 그룹을 추가하기 위해 아래의 메뉴로 이동합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/menu2.png&quot; alt=&quot;Menu&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;인스턴스 설정은 전체메뉴의 컴퓨팅 - EC2 - 인스턴스 - 인스턴스에서 설정할 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;페이지로 이동하면 생성된 인스턴트 리스트가 보입니다. 설정하고 싶은 인스턴스의 좌측 체크박스를 누른 뒤&lt;br /&gt;
+우측의 작업 - 보안 - 보안 그룹 변경을 눌러 상세페이지로 이동합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/instance.png&quot; alt=&quot;Instance&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;연결된 보안 그룹에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry></feed>
