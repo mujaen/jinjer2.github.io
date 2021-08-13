@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-07-30T17:47:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">자바스크립트 현황 및 발전 방향</title><link href="http://localhost:4000/blog/2021/07/14/javascript-framework.html" rel="alternate" type="text/html" title="자바스크립트 현황 및 발전 방향" /><published>2021-07-14T00:00:00+09:00</published><updated>2021-07-30T17:34:20+09:00</updated><id>http://localhost:4000/blog/2021/07/14/javascript-framework</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/14/javascript-framework.html">&lt;!--more--&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-13T17:21:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">자바스크립트 현황 및 발전 방향</title><link href="http://localhost:4000/blog/2021/07/14/javascript-framework.html" rel="alternate" type="text/html" title="자바스크립트 현황 및 발전 방향" /><published>2021-07-14T00:00:00+09:00</published><updated>2021-08-04T09:30:42+09:00</updated><id>http://localhost:4000/blog/2021/07/14/javascript-framework</id><content type="html" xml:base="http://localhost:4000/blog/2021/07/14/javascript-framework.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#서론&quot; id=&quot;markdown-toc-서론&quot;&gt;서론&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바스크립트-개요&quot; id=&quot;markdown-toc-자바스크립트-개요&quot;&gt;자바스크립트 개요&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#소개&quot; id=&quot;markdown-toc-소개&quot;&gt;소개&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-연혁&quot; id=&quot;markdown-toc-1-연혁&quot;&gt;1. 연혁&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#2-표준화&quot; id=&quot;markdown-toc-2-표준화&quot;&gt;2. 표준화&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바스크립트-특징&quot; id=&quot;markdown-toc-자바스크립트-특징&quot;&gt;자바스크립트 특징&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#특징&quot; id=&quot;markdown-toc-특징&quot;&gt;특징&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-언어적-특징&quot; id=&quot;markdown-toc-1-언어적-특징&quot;&gt;1. 언어적 특징&lt;/a&gt;        &lt;ul&gt;
           &lt;li&gt;&lt;a href=&quot;#1-인터프리터-언어&quot; id=&quot;markdown-toc-1-인터프리터-언어&quot;&gt;(1) 인터프리터 언어&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;#2-프로토타입-기반-언어&quot; id=&quot;markdown-toc-2-프로토타입-기반-언어&quot;&gt;(2) 프로토타입 기반 언어&lt;/a&gt;&lt;/li&gt;
@@ -25,13 +25,13 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바스크립트-현황&quot; id=&quot;markdown-toc-자바스크립트-현황&quot;&gt;자바스크립트 현황&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#현황&quot; id=&quot;markdown-toc-현황&quot;&gt;현황&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-웹-애플리케이션&quot; id=&quot;markdown-toc-1-웹-애플리케이션&quot;&gt;1. 웹 애플리케이션&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#2-모바일-애플리케이션&quot; id=&quot;markdown-toc-2-모바일-애플리케이션&quot;&gt;2. 모바일 애플리케이션&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#3-데스크톱-애플리케이션-현황&quot; id=&quot;markdown-toc-3-데스크톱-애플리케이션-현황&quot;&gt;3. 데스크톱 애플리케이션 현황&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#자바스크립트-향후-전망&quot; id=&quot;markdown-toc-자바스크립트-향후-전망&quot;&gt;자바스크립트 향후 전망&lt;/a&gt;    &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#향후-전망&quot; id=&quot;markdown-toc-향후-전망&quot;&gt;향후 전망&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-타입-사용&quot; id=&quot;markdown-toc-1-타입-사용&quot;&gt;1. 타입 사용&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#2-웹어셈블리&quot; id=&quot;markdown-toc-2-웹어셈블리&quot;&gt;2. 웹어셈블리&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
@@ -63,7 +63,7 @@
 관심을 유지할 수 있을지 분야별 대표 자바스크립트 프레임워크의 현황을 살펴보면서    &lt;br /&gt;
 최신 동향을 분석하고 발전 방향을 제시하는데 연구목적이 있다&lt;/p&gt;
 
-&lt;h2 id=&quot;자바스크립트-개요&quot;&gt;자바스크립트 개요&lt;/h2&gt;
+&lt;h2 id=&quot;소개&quot;&gt;소개&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-연혁&quot;&gt;1. 연혁&lt;/h3&gt;
 
@@ -88,7 +88,7 @@ ECMA 인터내셔널에게 요청한다 이때 Microsoft의 Jscript와 Ado
 ECMA-262라는 새로운 기술 규격이 만들어졌고 ECMA-262는 자바스크립트의 파편화를 방지하고 모든 브라우저를 동일하게 동작할 수 있도록 표준화하였다.   
 이후 ECMA-262 기술 규격에 따라 자바스크립트는 ECMAScript로 명명된다.&lt;/p&gt;
 
-&lt;h2 id=&quot;자바스크립트-특징&quot;&gt;자바스크립트 특징&lt;/h2&gt;
+&lt;h2 id=&quot;특징&quot;&gt;특징&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-언어적-특징&quot;&gt;1. 언어적 특징&lt;/h3&gt;
 
@@ -140,7 +140,7 @@ Window 객체의 프로퍼티와 메서드를 조작하거나 이벤트 핸들�
 &lt;p&gt;웹서버에서 사용되는 자바스크립트 기술로 대표적으로 Node.js 플랫폼을 이용한 런타임 환경을 제공하여        &lt;br /&gt;
 단일 스레드 비동기 IO 방식의 고성능의 서버 기능을 지원한다&lt;/p&gt;
 
-&lt;h2 id=&quot;자바스크립트-현황&quot;&gt;자바스크립트 현황&lt;/h2&gt;
+&lt;h2 id=&quot;현황&quot;&gt;현황&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-웹-애플리케이션&quot;&gt;1. 웹 애플리케이션&lt;/h3&gt;
 
@@ -168,7 +168,7 @@ React Native는 자바스크립트 라이브러리인 React의 규칙을 �
 많이 필요로 하여 상대적으로 느린 단점이 있다. 데스크톱 애플리케이션 개발을 고려하는 엔지니어라면 자바스크립트 기반의 일렉트론을   
 사용하는 방법도 실효성 면에서 선택할 수 있는 옵션 중 하나이다.&lt;/p&gt;
 
-&lt;h2 id=&quot;자바스크립트-향후-전망&quot;&gt;자바스크립트 향후 전망&lt;/h2&gt;
+&lt;h2 id=&quot;향후-전망&quot;&gt;향후 전망&lt;/h2&gt;
 
 &lt;h3 id=&quot;1-타입-사용&quot;&gt;1. 타입 사용&lt;/h3&gt;
 
@@ -180,25 +180,32 @@ React Native는 자바스크립트 라이브러리인 React의 규칙을 �
 
 &lt;h3 id=&quot;2-웹어셈블리&quot;&gt;2. 웹어셈블리&lt;/h3&gt;
 
-&lt;p&gt;최신 웹 브라우저에 지원되는 웹어셈블리(WebAssembly)는 C, C++, RUST, GO 등의 저급 소스 언어의 바이너리 파일을 컴파일 하여  &lt;br /&gt;
-네이티브에 인접한 속도로 웹 브라우저에서 실행되는 강점을 보인다&lt;br /&gt;
-기존 웹 브라우저의 가상머신(VM)에서 작동될 수 있는 언어가 자바스크립트 뿐이었고 일반적인 동적 표현을 보여주는 것은
-가능한 것이 사실이나 최근 기술의 발전에 따라 증강현실 혹은 영상처리 등 네이티브 환경에서의 요구사항이 커지는 만큼 높아짐에 따라
-성능 문제로 인한 필요성이 점차 늘어났다
-프리미어 프로, 포토샵 같이 C, C++로 개발된 소프트웨어를 다운로드 필요없이 브라우저에서 직접 실행이 가능하다는 것
-실제로 웹어셈블리로 컴파일하여 브라우저에서 실행되는 게임이 점차 증가하고 있다&lt;/p&gt;
-
-&lt;p&gt;자바스크립트 창시자인 브렌던 아이크(Brendan Eich) 또한 웹어셈블리가 자바스크립트를 대체하기 위해 개발된 것은 아니며
-다만 자바스크립트의 슈퍼셋 개념으로 나온것이기에 문제점을 해결해줄 것 이라며 지지하였다&lt;br /&gt;
-웹어셈블리가 자바스크립트의 결정타는 아닐 것으로 
-인터렉티브 이미지 프로세싱 등 부분을 맡으며 서로 공존할 것으로 판단된다.&lt;/p&gt;
+&lt;p&gt;최신 웹 브라우저에 지원되는 웹어셈블리(WebAssembly)는 C, C++, RUST, GO 등의 저급 소스 언어의 바이너리 파일을 컴파일 하여   
+네이티브에 인접한 속도로 웹 브라우저에서 실행되는 강점을 보인다.  기존 웹 브라우저의 가상머신(VM)에서 작동될 수 있는 언어가   
+자바스크립트뿐이었고 일반적인 동적 표현을 보여주는 것은 가능하나 최근 기술의 발전에 따라 증강현실 혹은 영상처리 등 네이티브 환경에서의   
+요구 사항이 높아짐에 따라 필요성이 점차 늘어났다. 프리미어 프로, 포토샵같이 C, C++로 개발된 소프트웨어를 다운로드 필요없이 브라우저에서   
+직접 실행이 가능해질 수 있으며 실제로 웹어셈블리를 통해 브라우저에서 실행되는 웹게임이 증가하는 추세이다.   
+자바스크립트 창시자인 브렌던 아이크(Brendan Eich) 또한 웹어셈블리가 자바스크립트를 대체하기 위해 개발된 것은 아니며 다만 자바스크립트의   
+슈퍼셋 개념으로 나온 것이기에 기능적으로 지원이 안되던 부분을 해결해 줄 것 이라며 지지하였다. 필자 또한 웹어셈블리가 자바스크립트의 종말을 앞당기는   
+결정타가 될 것이라 생각하지 않지만 이미지 프로세싱 등 높은 난이도를 요구하는 시대 흐름의 변화에 따라 자바스크립트처럼 인터렉티브하며   
+웹어셈블리의 기능까지 포함한 새로운 대체 언어가 나올수도 있다고 판단된다.&lt;/p&gt;
 
 &lt;h2 id=&quot;결론&quot;&gt;결론&lt;/h2&gt;
 
-&lt;p&gt;분석결과, 동적 타입 언어인 자바스크립트 특성 상 타입 지정이 필요 없었으나 점차 요구가 많아지며&lt;br /&gt;
-도입을 결정하게 되었고 큰 변화를 가져올 예정
-다른 언어들의 강점을 흡수하며 앞으로 향후 15년간은 다양한 분야에서 사용될 언어로 
-뜨거운 관심이 이어질 것으로 전망된다&lt;/p&gt;
+&lt;p&gt;최근 개발자 설문 조사를 통해 가장 일반적으로 사용되는 프로그래밍 언어로 자리매김한 자바스크립트가    &lt;br /&gt;
+이러한 관심과 지속적인 인기를 가지게 된 언어의 특징과 개발 분야별로 활용되는 사례를 알아보고           &lt;br /&gt;
+다른 언어와의 경쟁우위에서 어떠한 강점을 내세워 현재의 자리를 유지할 수 있을지 와 표준화를 통해 앞으로 어떠한 방향으로  &lt;br /&gt;
+통합되어 관리되는지 연구를 통해 자바스크립트의 현황과 발전방향에 대해 분석하였다  &lt;br /&gt;
+분석 결과, 웹 애플리케이션 개발 외에도 모바일과 데스크톱 애플리케이션 분야에도 자바스크립트 프레임워크가 사용되고 있으며      &lt;br /&gt;
+이후 다른 분야에서도 충분히 활용될 수 있는 것을 입증하는데 이는 ECMA-262로 표준화된 규격을 바탕으로 서로 다른 소속의 
+기업, 개발자 간의 협력을 통해 빠르게 공동 개발이 이루어지면서 각각의 분야에 필요한 프레임워크나 라이브러리의 출시를 앞당겨 주며       &lt;br /&gt;
+표준화로 인하여 호환성이 좋고 재사용성이나 구조에 대한 이해를 높여준다.  &lt;br /&gt;
+웹어셈블리의 등장으로 자바스크립트가 현재의 입지를 잃고 저급 프로그래밍 언어들이 그 자리를 대체하지 않을까 하는 의문을 가졌으나&lt;br /&gt;
+서로의 역할이나 강점이 확연히 다르고 자바스크립트의 창시자이자 웹어셈블리 개발에 참여한 브렌던 아이크(Brendan Eich)도 긍정적인 입장을&lt;br /&gt;
+내세우며 자바스크립트와 웹어셈블리의 공존을 지지하였다.   &lt;br /&gt;
+또한 동적 타입 언어인 자바스크립트 특성상 타입 지정이 필요 없었으나 점차 요구가 많아지며&lt;br /&gt;
+도입을 결정하게 되었고 큰 변화를 가져올 예정이며 타입스크립트와 같은 슈퍼셋을 통해 다른 언어들의 강점을 흡수하며 
+앞으로 향후 15년간은 다양한 분야에서 사용될 언어로 뜨거운 관심이 이어질 것으로 전망된다&lt;/p&gt;
 
 &lt;h4 id=&quot;참고문헌&quot;&gt;참고문헌&lt;/h4&gt;
 
@@ -208,7 +215,176 @@ Boris Cherny, 『타입스크립트 프로그래밍』, 인사이트(2020), p8-2
 Mike Rourke, 『웹어셈블리 Wasm과 C/C++를 이용한 고성능 웹 애플리케이션 개발』, 에이콘출판사(2019), p30-37. &lt;br /&gt;
 &lt;a href=&quot;https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-loved&quot;&gt;Stack Overflow Developer Survey, 2020,&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.springboard.com/blog/data-science/history-of-javascript/&quot;&gt;The History of JavaScript&lt;/a&gt;  &lt;br /&gt;
-&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;github 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(3)</title><link href="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(3)" /><published>2021-02-07T00:00:00+09:00</published><updated>2021-06-16T17:46:33+09:00</updated><id>http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html">&lt;!--more--&gt;
+&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;github 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">React Rudux로 성능 및 코드 최적화 하기</title><link href="http://localhost:4000/blog/2021/05/07/react-redux-hooks.html" rel="alternate" type="text/html" title="React Rudux로 성능 및 코드 최적화 하기" /><published>2021-05-07T00:00:00+09:00</published><updated>2021-08-13T17:21:38+09:00</updated><id>http://localhost:4000/blog/2021/05/07/react-redux-hooks</id><content type="html" xml:base="http://localhost:4000/blog/2021/05/07/react-redux-hooks.html">&lt;!--more--&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#install&quot; id=&quot;markdown-toc-install&quot;&gt;Install&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#counter&quot; id=&quot;markdown-toc-counter&quot;&gt;Counter&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-app&quot; id=&quot;markdown-toc-1-app&quot;&gt;1. App&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#1-usedispatch&quot; id=&quot;markdown-toc-1-usedispatch&quot;&gt;(1) useDispatch&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#2-useselector&quot; id=&quot;markdown-toc-2-useselector&quot;&gt;(2) useSelector&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-store&quot; id=&quot;markdown-toc-2-store&quot;&gt;2. Store&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#3-actions&quot; id=&quot;markdown-toc-3-actions&quot;&gt;3. Actions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#4-reducer&quot; id=&quot;markdown-toc-4-reducer&quot;&gt;4. Reducer&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;이번 포스팅에서는 React Rudux를 적용해서 저장소에서 특정 데이터를 추출하고 조작할 겁니다.    &lt;br /&gt;
+기본적인 환경 설정을 위해 프로젝트 폴더를 하나 만들고 터미널을 열어 아래의 명령어를 입력해 줍니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;react react-dom redux react-redux
+or
+yarn add react react-dom redux react-redux
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;React Rudux 설정은 &lt;a href=&quot;https://react-redux.js.org/&quot; target=&quot;_blank&quot;&gt;공식 문서&lt;/a&gt;을 참고해 주세요!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;counter&quot;&gt;Counter&lt;/h2&gt;
+
+&lt;p&gt;React 서버가 정상적으로 구동되었다는 전제하에 Number를 Count 하는 동안 저장소에 특정 데이터를 두고 조작해 보면서  &lt;br /&gt;
+React Redux가 어떤 형태로 데이터를 추출할 것인지 같이 만들면서 보겠습니다&lt;/p&gt;
+
+&lt;h3 id=&quot;1-app&quot;&gt;1. App&lt;/h3&gt;
+
+&lt;p&gt;루트 경로에 ‘src’ 폴더를 하나 생성하고 app.js 파일을 하나 만들어 주세요&lt;br /&gt;
+React와 React DOM을 포함하여 아래와 같이 import 합니다&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// src/app.js&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-dom&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./actions/actions&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Provider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useDispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;React-redux&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;configureStore&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./store/index&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./reducer/index&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;configureStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useDispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+			&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/span&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;			&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;increment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;+&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;			&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;decrement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;-&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;		&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;	&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Provider&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Provider&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,
+&lt;/span&gt;	&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘Provider’를 최상위에서 렌더링해야 Hooks가 저장소 인스턴스에 액세스할 수 있습니다!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;1-usedispatch&quot;&gt;(1) useDispatch&lt;/h4&gt;
+
+&lt;p&gt;‘useDispatch’는 Redux 저장소에서 dispatch 함수에 대한 참조를 반환할 수 있습니다.    &lt;br /&gt;
+아래의 dispatch 함수는 actions의 설정된 타입을 참조해서 Reducer로 보내게 됩니다&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useDispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;increment&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;+&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;decrement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;-&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;2-useselector&quot;&gt;(2) useSelector&lt;/h4&gt;
+
+&lt;p&gt;‘useSelector’는 원하는 데이터를 저장소에서 추출할 수 있습니다.&lt;br /&gt;
+store에 reducer를 지정하여 count 상태를 조작하기 위해 변수로 설정합니다&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;configureStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2-store&quot;&gt;2. Store&lt;/h3&gt;
+
+&lt;p&gt;루트 경로에 ‘store’ 폴더를 하나 생성하고 index.js 파일을 하나 만들어 주세요    &lt;br /&gt;
+저장소를 만들기 위해 ‘createStore’를 redux에서 import 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;redux&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;configureStore&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reducer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;configureStore&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘configureStore’ 함수가 리턴하는 저장소에는 이전에 만든 reducer가 담길 겁니다!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;3-actions&quot;&gt;3. Actions&lt;/h3&gt;
+
+&lt;p&gt;루트 경로에 ‘actions’ 폴더를 하나 생성하고 actions.js 파일을 하나 만들어 주세요    &lt;br /&gt;
+Count 하기 위한 Increment 와 Decrement 함수를 추가하고 타입을 지정해 줄 겁니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// src/actions/actions.js&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;increment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;INCREMENT_COUNT&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;decrement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+	&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;DECREMENT_COUNT&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-reducer&quot;&gt;4. Reducer&lt;/h3&gt;
+
+&lt;p&gt;루트 경로에 ‘reducer’ 폴더를 하나 생성하고 count.js 파일을 하나 만들어 주세요    &lt;br /&gt;
+action의 타입에 따라 초기 state 값의 상태를 변경해 줄 겁니다&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// src/reducer/count.js&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;INCREMENT&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;DECREMENT&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+		&lt;span class=&quot;nl&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;같은 경로에 index.js 파일을 하나 더 만들어 주세요        &lt;br /&gt;
+생성한 count.js 파일을 import 하고 ‘combineReducers’를 사용하여 내보낼 겁니다&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// src/reducer/index.js&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;combineReducers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;redux&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./count&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;combineReducers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;눈치가 빠르신분들은 ‘combineReducers’가 하나가 아닌 여러개의 리듀서 함수를 결합할 수 도 있다는 것을 아시겠죠?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;서버를 실행해서 정상적으로 Counter 동작이 제대로 수행되는지 확인해 봅니다&lt;br /&gt;
+오늘 포스팅에서는 React Redux로 저장소에서 특정 데이터의 상태를 조작해 보&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">React + Socket.io로 만드는 채팅 애플리케이션(3)</title><link href="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html" rel="alternate" type="text/html" title="React + Socket.io로 만드는 채팅 애플리케이션(3)" /><published>2021-02-07T00:00:00+09:00</published><updated>2021-06-16T17:46:33+09:00</updated><id>http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs</id><content type="html" xml:base="http://localhost:4000/blog/2021/02/07/react-socketio-with-nodejs.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#server&quot; id=&quot;markdown-toc-server&quot;&gt;Server&lt;/a&gt;    &lt;ul&gt;
@@ -946,86 +1122,4 @@ EC2는 가상 서버를 구축하고 보안 및 네트워크 구성과 스토리
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-17/instance.png&quot; alt=&quot;Instance&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;상세페이지의 연결 섹션에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(1)</title><link href="http://localhost:4000/blog/2021/01/16/aws-security-group.html" rel="alternate" type="text/html" title="EC2로 서버와 데이터베이스(RDS) 보안그룹 설정하기(1)" /><published>2021-01-16T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/16/aws-security-group</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/16/aws-security-group.html">&lt;!--more--&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#ec2&quot; id=&quot;markdown-toc-ec2&quot;&gt;EC2&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#보안-그룹&quot; id=&quot;markdown-toc-보안-그룹&quot;&gt;보안 그룹&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#vpc&quot; id=&quot;markdown-toc-vpc&quot;&gt;VPC&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#인바운드-규칙&quot; id=&quot;markdown-toc-인바운드-규칙&quot;&gt;인바운드 규칙&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#아웃바운드-규칙&quot; id=&quot;markdown-toc-아웃바운드-규칙&quot;&gt;아웃바운드 규칙&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#인스턴스&quot; id=&quot;markdown-toc-인스턴스&quot;&gt;인스턴스&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ec2&quot;&gt;EC2&lt;/h2&gt;
-
-&lt;p&gt;들어가기에 앞서, AWS는 사용 편의성과 성능 개선을 위해 주기적으로 화면을 업데이트 하므로  &lt;br /&gt;
-가장 최신의 포스팅을 찾아 참고하시는 것을 추천합니다. 이 포스팅은 2021년 1월 16일에 작성되었습니다. &lt;br /&gt;
-EC2는 가상 서버를 구축하고 보안 및 네트워크 구성과 스토리지 관리를 지원하죠 오늘은 EC2의 보안설정을 통해  &lt;br /&gt;
-서버를 보호하는 방법을 알아볼 겁니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/menu.png&quot; alt=&quot;Menu&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;보안설정은 전체메뉴의 컴퓨팅 - EC2 - 네트워크 및 보안 - 보안 그룹에서 설정할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;보안-그룹&quot;&gt;보안 그룹&lt;/h2&gt;
-
-&lt;p&gt;인스턴스는 미리 설치되어 있다는 전제 하에 진행하도록 하겠습니다&lt;br /&gt;
-보안 그룹 페이지에 들어오면 현재 생성된 보안그룹 리스트를 확인할 수 있습니다. &lt;br /&gt;
-우측 상단의 ‘보안 그룹 생성’ 버튼을 클릭하여 보안 그룹을 하나 만들어 보도록 하죠&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/register.png&quot; alt=&quot;Register Button&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;등록 페이지로 들어오면 보안 그룹의 기본 세부 정보를 입력합니다. 저는 server의 보안 그룹을 만들 것이므로   &lt;br /&gt;
-보안 그룹의 이름과 간단한 설명 그리고 VPC를 선택할 겁니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/info.png&quot; alt=&quot;Register Button&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;vpc&quot;&gt;VPC&lt;/h3&gt;
-
-&lt;p&gt;Amazon Virtual Private Cloud(VPC)를 이용하면 사용자가 정의한 가상 네트워크로 AWS 리소스를 시작할 수 있습니다.&lt;br /&gt;
-자세한 내용은 설명서의 &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html&quot; target=&quot;_blank&quot;&gt;VPC&lt;/a&gt;를 참고해 주세요.&lt;/p&gt;
-
-&lt;h3 id=&quot;인바운드-규칙&quot;&gt;인바운드 규칙&lt;/h3&gt;
-
-&lt;p&gt;인바운드 규칙은 서버와 데이터베이스로 접근하는 데이터가 들어올 수 있도록 규칙을 정의하는 것입니다&lt;br /&gt;
-만약 외부인이 DB에 접근해서 악의적으로 데이터를 조작하게 된다면 큰 문제가 되겠죠?   &lt;br /&gt;
-그렇기에 굉장히 중요한 작업입니다. 그럼 ‘규칙 추가’ 버튼을 눌러 아래와 같이 추가해 보겠습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/inbound.png&quot; alt=&quot;InBound&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;2개 포트에 대한 규칙을 추가해 줘야 합니다 HTTP와 SSH를 설정해야 하는데요    &lt;br /&gt;
-HTTP 80번 포트는 외부인들도 접근이 가능해야 하므로 모든 IPv4 트래픽(0.0.0.0/0)과 IPv6 트래픽(::/0)을 설정해 줘야 합니다. &lt;br /&gt;
-SSH 22번 포트는 본인 혹은 권한이 있는 사람만 접속돼야 하므로 해당 IP 주소만 등록합니다&lt;/p&gt;
-
-&lt;h3 id=&quot;아웃바운드-규칙&quot;&gt;아웃바운드 규칙&lt;/h3&gt;
-
-&lt;p&gt;인바운드 규칙과 반대로 데이터를 서버와 데이터베이스에서 내보낼 수 있도록 규칙을 정의하는 것입니다&lt;br /&gt;
-아웃바운드의 경우 기본 설정된 모든 트래픽 유형 하나만 추가하면 됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/outbound.png&quot; alt=&quot;OutBound&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;하단의 ‘보안 그룹 생성’ 버튼을 눌러주면 리스트에 새로 추가된 보안 그룹을 확인할 수 있습니다.&lt;br /&gt;
-그럼 이제 생성한 보안 그룹을 인스턴스에 적용해 봐야겠죠?&lt;/p&gt;
-
-&lt;h3 id=&quot;인스턴스&quot;&gt;인스턴스&lt;/h3&gt;
-
-&lt;p&gt;서버를 설치하게 되면 자동으로 인스턴스가 생성되는데요 해당 인스턴스에 조금 전에 설정했던   &lt;br /&gt;
-보안 그룹을 추가하기 위해 아래의 메뉴로 이동합니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/menu2.png&quot; alt=&quot;Menu&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;인스턴스 설정은 전체메뉴의 컴퓨팅 - EC2 - 인스턴스 - 인스턴스에서 설정할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;페이지로 이동하면 생성된 인스턴트 리스트가 보입니다. 설정하고 싶은 인스턴스의 좌측 체크박스를 누른 뒤&lt;br /&gt;
-우측의 작업 - 보안 - 보안 그룹 변경을 눌러 상세페이지로 이동합니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-16/instance.png&quot; alt=&quot;Instance&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;연결된 보안 그룹에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;상세페이지의 연결 섹션에서 검색을 통해 새로 만든 보안 그룹을 추가해주면 보안 그룹 설정이 완료됩니다.&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry></feed>
