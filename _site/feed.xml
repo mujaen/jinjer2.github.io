@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-16T22:21:11+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">Context + Hooks로 사용자 인증하기</title><link href="http://localhost:4000/blog/2021/08/07/react-context-hooks.html" rel="alternate" type="text/html" title="Context + Hooks로 사용자 인증하기" /><published>2021-08-07T00:00:00+09:00</published><updated>2021-09-16T22:21:11+09:00</updated><id>http://localhost:4000/blog/2021/08/07/react-context-hooks</id><content type="html" xml:base="http://localhost:4000/blog/2021/08/07/react-context-hooks.html">&lt;!--more--&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-16T22:24:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">Context + Hooks로 사용자 인증하기</title><link href="http://localhost:4000/blog/2021/08/07/react-context-hooks.html" rel="alternate" type="text/html" title="Context + Hooks로 사용자 인증하기" /><published>2021-08-07T00:00:00+09:00</published><updated>2021-09-16T22:21:11+09:00</updated><id>http://localhost:4000/blog/2021/08/07/react-context-hooks</id><content type="html" xml:base="http://localhost:4000/blog/2021/08/07/react-context-hooks.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#install&quot; id=&quot;markdown-toc-install&quot;&gt;Install&lt;/a&gt;&lt;/li&gt;
@@ -356,7 +356,7 @@ Boris Cherny, 『타입스크립트 프로그래밍』, 인사이트(2020), p8-2
 Mike Rourke, 『웹어셈블리 Wasm과 C/C++를 이용한 고성능 웹 애플리케이션 개발』, 에이콘출판사(2019), p30-37. &lt;br /&gt;
 &lt;a href=&quot;https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-loved&quot;&gt;Stack Overflow Developer Survey, 2020,&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.springboard.com/blog/data-science/history-of-javascript/&quot;&gt;The History of JavaScript&lt;/a&gt;  &lt;br /&gt;
-&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;github 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">테스팅 프레임워크 Jest 적용하기</title><link href="http://localhost:4000/blog/2021/05/14/javascript-testing.html" rel="alternate" type="text/html" title="테스팅 프레임워크 Jest 적용하기" /><published>2021-05-14T00:00:00+09:00</published><updated>2021-08-16T20:01:58+09:00</updated><id>http://localhost:4000/blog/2021/05/14/javascript-testing</id><content type="html" xml:base="http://localhost:4000/blog/2021/05/14/javascript-testing.html">&lt;!--more--&gt;
+&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;github 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">테스팅 프레임워크 Jest 적용하기</title><link href="http://localhost:4000/blog/2021/05/14/javascript-testing.html" rel="alternate" type="text/html" title="테스팅 프레임워크 Jest 적용하기" /><published>2021-05-14T00:00:00+09:00</published><updated>2021-09-16T22:24:11+09:00</updated><id>http://localhost:4000/blog/2021/05/14/javascript-testing</id><content type="html" xml:base="http://localhost:4000/blog/2021/05/14/javascript-testing.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#설치&quot; id=&quot;markdown-toc-설치&quot;&gt;설치&lt;/a&gt;&lt;/li&gt;
@@ -366,7 +366,7 @@ Mike Rourke, 『웹어셈블리 Wasm과 C/C++를 이용한 고성능 웹 애플�
       &lt;li&gt;&lt;a href=&quot;#packagejson&quot; id=&quot;markdown-toc-packagejson&quot;&gt;Package.json&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#결론&quot; id=&quot;markdown-toc-결론&quot;&gt;결론&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;설치&quot;&gt;설치&lt;/h2&gt;
@@ -397,9 +397,7 @@ package.json 파일을 열어 다음과 같이 script를 추가해 줍니다&lt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;결론&quot;&gt;결론&lt;/h2&gt;
-
-&lt;p&gt;최근 개발자 설문 조사를 통해 가장 일반적으로 사용되는 프로그래밍 언어로 자리매김한 자바스크립트가&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">React Rudux로 성능 및 코드 최적화 하기</title><link href="http://localhost:4000/blog/2021/05/07/react-redux-hooks.html" rel="alternate" type="text/html" title="React Rudux로 성능 및 코드 최적화 하기" /><published>2021-05-07T00:00:00+09:00</published><updated>2021-08-13T17:39:29+09:00</updated><id>http://localhost:4000/blog/2021/05/07/react-redux-hooks</id><content type="html" xml:base="http://localhost:4000/blog/2021/05/07/react-redux-hooks.html">&lt;!--more--&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">React Rudux로 성능 및 코드 최적화 하기</title><link href="http://localhost:4000/blog/2021/05/07/react-redux-hooks.html" rel="alternate" type="text/html" title="React Rudux로 성능 및 코드 최적화 하기" /><published>2021-05-07T00:00:00+09:00</published><updated>2021-08-13T17:39:29+09:00</updated><id>http://localhost:4000/blog/2021/05/07/react-redux-hooks</id><content type="html" xml:base="http://localhost:4000/blog/2021/05/07/react-redux-hooks.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#install&quot; id=&quot;markdown-toc-install&quot;&gt;Install&lt;/a&gt;&lt;/li&gt;
