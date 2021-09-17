@@ -67,7 +67,7 @@ export const AuthProvider = ({children}) => {
 };
 ```
 
-> 'useState' Hooks를 사용해서 사용자의 인증여부에 따라 'auth'의 값을 바꿔줄 겁니다
+> 'useState' Hook을 사용해서 사용자의 인증여부에 따라 'auth'의 값을 바꿔줄 겁니다
 
 Provider는 Context를 구독하는 컴포넌트들에게 context의 변화를 알리는 역할을 맡는데요 'AuthContext'에 value로    
 useState Hooks로 설정한 userState, setUserState와 isAuthenticated 함수를 하위 컴포넌트로 전달합니다.  

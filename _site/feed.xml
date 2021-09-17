@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-16T22:24:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">Context + Hooks로 사용자 인증하기</title><link href="http://localhost:4000/blog/2021/08/07/react-context-hooks.html" rel="alternate" type="text/html" title="Context + Hooks로 사용자 인증하기" /><published>2021-08-07T00:00:00+09:00</published><updated>2021-09-16T22:21:11+09:00</updated><id>http://localhost:4000/blog/2021/08/07/react-context-hooks</id><content type="html" xml:base="http://localhost:4000/blog/2021/08/07/react-context-hooks.html">&lt;!--more--&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-17T16:12:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jinjer’s Blog</title><subtitle>진저와 함께 성장하는&lt;br&gt; 개발자 기술블로그.</subtitle><entry><title type="html">Context + Hooks로 사용자 인증하기</title><link href="http://localhost:4000/blog/2021/08/07/react-context-hooks.html" rel="alternate" type="text/html" title="Context + Hooks로 사용자 인증하기" /><published>2021-08-07T00:00:00+09:00</published><updated>2021-09-17T11:24:53+09:00</updated><id>http://localhost:4000/blog/2021/08/07/react-context-hooks</id><content type="html" xml:base="http://localhost:4000/blog/2021/08/07/react-context-hooks.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#install&quot; id=&quot;markdown-toc-install&quot;&gt;Install&lt;/a&gt;&lt;/li&gt;
@@ -67,7 +67,7 @@ context를 만들기 위해 ‘createContext’를 import 합니다.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;‘useState’ Hooks를 사용해서 사용자의 인증여부에 따라 ‘auth’의 값을 바꿔줄 겁니다&lt;/p&gt;
+  &lt;p&gt;‘useState’ Hook을 사용해서 사용자의 인증여부에 따라 ‘auth’의 값을 바꿔줄 겁니다&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Provider는 Context를 구독하는 컴포넌트들에게 context의 변화를 알리는 역할을 맡는데요 ‘AuthContext’에 value로  &lt;br /&gt;
@@ -356,7 +356,206 @@ Boris Cherny, 『타입스크립트 프로그래밍』, 인사이트(2020), p8-2
 Mike Rourke, 『웹어셈블리 Wasm과 C/C++를 이용한 고성능 웹 애플리케이션 개발』, 에이콘출판사(2019), p30-37. &lt;br /&gt;
 &lt;a href=&quot;https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-languages-loved&quot;&gt;Stack Overflow Developer Survey, 2020,&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.springboard.com/blog/data-science/history-of-javascript/&quot;&gt;The History of JavaScript&lt;/a&gt;  &lt;br /&gt;
-&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;github 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">테스팅 프레임워크 Jest 적용하기</title><link href="http://localhost:4000/blog/2021/05/14/javascript-testing.html" rel="alternate" type="text/html" title="테스팅 프레임워크 Jest 적용하기" /><published>2021-05-14T00:00:00+09:00</published><updated>2021-09-16T22:24:11+09:00</updated><id>http://localhost:4000/blog/2021/05/14/javascript-testing</id><content type="html" xml:base="http://localhost:4000/blog/2021/05/14/javascript-testing.html">&lt;!--more--&gt;
+&lt;a href=&quot;https://octoverse.github.com/&quot;&gt;github 공식사이트&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="javascript" /><summary type="html"></summary></entry><entry><title type="html">실무에서 주로 사용하는 Hook 종류</title><link href="http://localhost:4000/blog/2021/06/11/react-use-hook.html" rel="alternate" type="text/html" title="실무에서 주로 사용하는 Hook 종류" /><published>2021-06-11T00:00:00+09:00</published><updated>2021-09-17T16:12:03+09:00</updated><id>http://localhost:4000/blog/2021/06/11/react-use-hook</id><content type="html" xml:base="http://localhost:4000/blog/2021/06/11/react-use-hook.html">&lt;!--more--&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#intro&quot; id=&quot;markdown-toc-intro&quot;&gt;Intro&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hooks&quot; id=&quot;markdown-toc-hooks&quot;&gt;Hooks&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-usestate&quot; id=&quot;markdown-toc-1-usestate&quot;&gt;1. useState&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-useeffect&quot; id=&quot;markdown-toc-2-useeffect&quot;&gt;2. useEffect&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#3-usecontext&quot; id=&quot;markdown-toc-3-usecontext&quot;&gt;3. useContext&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#4-useref&quot; id=&quot;markdown-toc-4-useref&quot;&gt;4. useRef&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#5-useselector-usedispatch&quot; id=&quot;markdown-toc-5-useselector-usedispatch&quot;&gt;5. useSelector, useDispatch&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#사용-규칙&quot; id=&quot;markdown-toc-사용-규칙&quot;&gt;사용 규칙&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;이번 포스팅에서는 React 16.8에 새로 추가된 Hook의 종류와 사용규칙을 알아보도록 하겠습니다!&lt;br /&gt;
+Hook은 기존의 class 바탕의 코드를 작성하지 않고 상태 값과 여러 React 기능을 사용할 수 있도록 고안되었죠  &lt;br /&gt;
+함수형 컴포넌트에 라이프사이클(Hook)을 적용하면서 함수가 어떻게 작동하는지 하나씩 알아봅시다.&lt;/p&gt;
+
+&lt;h2 id=&quot;hooks&quot;&gt;Hooks&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-usestate&quot;&gt;1. useState&lt;/h3&gt;
+
+&lt;p&gt;‘useState’는 state변수와 해당 변수를 갱신할 수 있는 두 개의 쌍을 반환하며 인자로 초기 값을 넘겨주게 됩니다.   &lt;br /&gt;
+그럼 state 변수를 하나 선언하도록 해보죠&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setUserState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;auth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;userState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setUserState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;jinjer&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;auth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;})}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Click&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘useState’ Hook을 사용해서 userState, setUserState 두 개의 쌍을 이용하여 초기 값을 갱신할 수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;2-useeffect&quot;&gt;2. useEffect&lt;/h3&gt;
+
+&lt;p&gt;‘useState’ 만큼 자주 사용하는 Hook이죠 ‘useEffect’를 사용하면 함수 컴포넌트에서 사이드 이펙트를 수행할 수 있습니다.&lt;br /&gt;
+버튼을 클릭하면 state변수의 값을 변경해주는 예시를 보면서 어떻게 동작되는지 알아보도록 하죠&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Click&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘useEffect’는 2개의 인자를 가집니다. 첫 번째 인자는 사이드 이펙트를 실행할 화살표 함수이며 두 번째 인자는 의존성 배열입니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;두 번째 의존성 배열을 선언하지 않는다면 무한루프에 빠질 수 있습니다. 첫 번째 함수가 두 번째 배열의 원소에 따라 의존성을 가지기 때문이죠 보통은 빈 배열을 선언해도 무방하지만 위의 예시처럼 count에 따라 사이드 이펙트가 수행되도록 설정할 수 있습니다&lt;/p&gt;
+
+&lt;h3 id=&quot;3-usecontext&quot;&gt;3. useContext&lt;/h3&gt;
+
+&lt;p&gt;React가 처음 알려졌을 당시 props를 하위 컴포넌트에서 사용하려면 전부 인자로 전달하고&lt;br /&gt;
+받아서 사용하고 또 다시 넘겨주는 번거로움이 존재했습니다&lt;br /&gt;
+이러한 문제점을 해결하기 위해 전역으로 props를 관리할 수 있는 방법을 모색했고 Redux와 Context가 만들어 졌죠
+‘useContext’는 Context에서 현재 값을 반환 받을 수 있습니다 하위 컴포넌트 어디에서든 단 한번의 선언으로 사용이 가능하게 된거죠&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useContext&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-dom&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PageContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;PageProvider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;./context/PageContext&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PageContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;page&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;   &lt;/span&gt;&lt;span class=&quot;err&quot;&gt; 
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;PageProvider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/PageProvider&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,
+&lt;/span&gt;    &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;‘PageProvider’를 최상위에서 렌더링해야 context에 설정된 props를 가져올 수 있습니다!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;4-useref&quot;&gt;4. useRef&lt;/h3&gt;
+
+&lt;p&gt;‘useRef’는 .current 프로퍼티로 전달된 인자로 초기화된 변경 가능한 객체를 반환합니다.     &lt;br /&gt;
+반환된 객체는 컴포넌트의 전 생애주기를 통해 유지되지만 렌더링에 곧바로 반영되진 않습니다&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useRef&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ReactDOM&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-dom&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;countRef&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;clickHandler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;countRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`Clicked &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;countRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; times`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clickHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Click&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;countRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;5-useselector-usedispatch&quot;&gt;5. useSelector, useDispatch&lt;/h3&gt;
+
+&lt;p&gt;‘useSelector’와 ‘useDispatch’는 React-Redux에서 제공되는 Hooks입니다 useSelector는 저장소 상태를 유일한 인수로&lt;br /&gt;
+사용하여 호출합니다. useDispatch는 저장소에서 함수에 대한 참조를 반환합니다. 아래의 예시를 통해 적용하는 방법을 간단히 알아보도록 하죠&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;useSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useDispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-redux&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useDispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useSelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;signoutHandler&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;actions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;signout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Fragment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;signoutHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nx&quot;&gt;Signout&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Button&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/React.Fragment&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;사용-규칙&quot;&gt;사용 규칙&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;반복문, 조건문, 중첩되는 함수 내에서 실행하면 안됩니다!&lt;/li&gt;
+  &lt;li&gt;일반적인 자바스크립트 함수가 아닌 React 함수 내에서만 Hook을 호출해야 합니다&lt;/li&gt;
+  &lt;li&gt;최상위에서만 Hook을 호출해야 합니다&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;최상위에서만 Hook을 호출해야 한다는게 무엇일까요? 아래의 예시로 알려드리겠습니다!&lt;br /&gt;
+React는 렌더된 순서대로 state를 인식합니다 만약 아래 코드와 같이 조건문으로 인하여&lt;br /&gt;
+state에 영향을 준다면 조건에 따라 state 순서에 혼동을 줄 수 있습니다 그렇기에 만약 조건문을 사용해야 한다면&lt;br /&gt;
+함수 내부에서 사용하는 것이 좋습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Jinjer&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    
+    &lt;span class=&quot;c1&quot;&gt;// Good!&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Jinjer Kim&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;   
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]);&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// Bad..&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;setName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Jinjer Kim&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;오늘 포스팅에서는 React의 Hook을 하나씩 살펴보면서 자주 사용되는 Hook이 어떤 방식으로 동작하는지 알아보았습니다  &lt;br /&gt;
+기존 class 방식의 생명주기 활용과 함수형으로 개발된 Hook을 쓰면서 직접 경험해보고 때에 따라 사용하는게 좋을 듯 하네요&lt;br /&gt;
+단 사용 규칙을 꼭 지켜야 state가 순서대로 안전하게 동작할 수 있으니 유의하세요!&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="react" /><summary type="html"></summary></entry><entry><title type="html">테스팅 프레임워크 Jest 적용하기</title><link href="http://localhost:4000/blog/2021/05/14/javascript-testing.html" rel="alternate" type="text/html" title="테스팅 프레임워크 Jest 적용하기" /><published>2021-05-14T00:00:00+09:00</published><updated>2021-09-16T22:24:11+09:00</updated><id>http://localhost:4000/blog/2021/05/14/javascript-testing</id><content type="html" xml:base="http://localhost:4000/blog/2021/05/14/javascript-testing.html">&lt;!--more--&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#설치&quot; id=&quot;markdown-toc-설치&quot;&gt;설치&lt;/a&gt;&lt;/li&gt;
@@ -1083,78 +1282,4 @@ Certificate Manager 설정 페이지에서 좌측 상단 ‘인증서 요청’ 
 검토를 진행하게 됩니다 &lt;a href=&quot;https://mujaen.github.io/blog/2021/01/18/aws-route-53.html&quot; target=&quot;_blank&quot;&gt;지난 포스팅&lt;/a&gt;에서 Route53에 DNS 정보를 등록해서 도메인을 연결했었죠    &lt;br /&gt;
 검증을 위해서 아래의 CNAME 기록을 Route53에 DNS 구성에 추가하면 검증이 완료됩니다&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-22/validation.png&quot; alt=&quot;Validation&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry><entry><title type="html">Elastic Beanstalk로 애플리케이션 등록과 관리</title><link href="http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk.html" rel="alternate" type="text/html" title="Elastic Beanstalk로 애플리케이션 등록과 관리" /><published>2021-01-21T00:00:00+09:00</published><updated>2021-06-16T17:01:51+09:00</updated><id>http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk</id><content type="html" xml:base="http://localhost:4000/blog/2021/01/21/aws-elastic-beanstalk.html">&lt;!--more--&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#create&quot; id=&quot;markdown-toc-create&quot;&gt;Create&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#티어-선택&quot; id=&quot;markdown-toc-티어-선택&quot;&gt;티어 선택&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#이름-입력&quot; id=&quot;markdown-toc-이름-입력&quot;&gt;이름 입력&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#플랫폼-선택&quot; id=&quot;markdown-toc-플랫폼-선택&quot;&gt;플랫폼 선택&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#코드-등록&quot; id=&quot;markdown-toc-코드-등록&quot;&gt;코드 등록&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#delete&quot; id=&quot;markdown-toc-delete&quot;&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;create&quot;&gt;Create&lt;/h2&gt;
-
-&lt;p&gt;들어가기에 앞서, AWS는 사용 편의성과 성능 개선을 위해 주기적으로 화면을 업데이트 하므로  &lt;br /&gt;
-가장 최신의 포스팅을 찾아 참고하시는 것을 추천합니다. 이 포스팅은 2021년 1월 21일에 작성되었습니다. &lt;br /&gt;
-Elastic Beanstalk는 구축한 애플리케이션 서버를 관리할 때 사용되죠 오늘은 Elastic Beanstalk의 환경을 &lt;br /&gt;
-생성해보고 관리하는 방법을 알아볼 겁니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-21/menu.png&quot; alt=&quot;Menu&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Elastic Beanstalk 설정은 전체메뉴의 컴퓨팅 - Elastic Beanstalk에서 설정할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;티어-선택&quot;&gt;티어 선택&lt;/h3&gt;
-
-&lt;p&gt;Elastic Beanstalk 환경 설정을 위해서 우측의 ‘새 환경 설정’ 버튼을 눌러 줍니다.&lt;br /&gt;
-환경 티어 선택에서 ‘웹 서버 환경’을 선택하고 ‘선택’ 버튼을 눌러주세요&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-21/tier.png&quot; alt=&quot;Select Tier&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;이름-입력&quot;&gt;이름 입력&lt;/h3&gt;
-
-&lt;p&gt;다음은 애플리케이션 이름을 입력해 줍니다 이름을 입력을 하게 되면 자동으로    &lt;br /&gt;
-아래에 -env 가 붙은 환경 이름이 만들어지는 것을 확인할 수 있습니다&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-21/name.png&quot; alt=&quot;Add Name&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;이때, 환경 이름은 EC2에 자동으로 생성되는 인스턴스 명입니다!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;플랫폼-선택&quot;&gt;플랫폼 선택&lt;/h3&gt;
-
-&lt;p&gt;Java, Ruby, Tomcat, Node.js, PHP 등 자신의 프로젝트에 해당되는 플랫폼을 선택하면 됩니다.       &lt;br /&gt;
-저는 Tomcat으로 서버를 구동하기 때문에 Tomcat을 선택하고 진행하겠습니다&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-21/platform.png&quot; alt=&quot;Select Platform&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;코드-등록&quot;&gt;코드 등록&lt;/h3&gt;
-
-&lt;p&gt;따로 설정한 파일이 없으므로 샘플 애플리케이션을 사용하여 진행하겠습니다  &lt;br /&gt;
-마지막으로 아래의 ‘환경 생성’ 버튼을 누르면 5-10분 뒤에 애플리케이션이 만들어진 것을 확인할 수 있습니다  &lt;br /&gt;
-환경이 생성되면 EC2의 인스턴스도 자동으로 생성됩니다!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-21/code.png&quot; alt=&quot;Add Code&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;‘추가 옵션 구성’ 버튼을 누르면 추가적인 옵션을 선택할 수 있는데요      &lt;br /&gt;
-만약 로드밸런서를 이용하여 보안 인증서를 등록하려면 반드시 이곳에서 설정해야   &lt;br /&gt;
-나중에 다시 설치해야 하는 번거로움을 피할 수 있습니다&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;delete&quot;&gt;Delete&lt;/h2&gt;
-
-&lt;p&gt;생성한 환경을 삭제해 보도록 하죠 해당 환경의 좌측 체크박스를 누른 뒤 우측의 작업을 눌러 ‘환경 종료’를&lt;br /&gt;
-눌러주면 5-10분 뒤 환경이 종료되고 하루 정도 지나면 자동으로 리스트에서 삭제됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-21/delete.png&quot; alt=&quot;Delete&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Elastic Beanstalk 환경 설정은 전체메뉴의 컴퓨팅 - Elastic Beanstalk - 환경에서 설정할 수 있습니다.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/assets/img/2021-01-22/validation.png&quot; alt=&quot;Validation&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="aws" /><summary type="html"></summary></entry></feed>
